@@ -27,6 +27,26 @@
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .nav-link { transition: all 0.3s; }
         .nav-link:hover { color: #3b82f6; text-shadow: 0 0 8px rgba(59, 130, 246, 0.6); }
+
+        /* KLASIČNI CSS ZA MOBILNI IZBORNIK KOJI UKLANJA GREŠKE PREGLEDNIKA */
+        #mobilni-meni {
+            position: fixed !important;
+            top: 72px !important; /* Točno ispod staklene trake */
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            background-color: #050a15 !important; /* Čvrsta, skroz tamna pozadina */
+            z-index: 9999 !important; /* Ispred svega na stranici */
+            display: none; /* Sakriven u startu */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 40px;
+            overflow-y: auto;
+        }
+        #mobilni-meni.otvoren {
+            display: flex !important;
+        }
     </style>
 </head>
 <body>
@@ -56,18 +76,18 @@
         </div>
     </nav>
 
-    <div id="mobilni-meni" class="fixed top-[73px] left-0 right-0 bottom-0 bg-[#050a15] flex flex-col items-center justify-start pt-12 gap-8 text-xl font-bold uppercase tracking-widest hidden z-40 overflow-y-auto">
-        <a href="#pocetna" onclick="toggleMobilniMeni()" class="nav-link py-2 w-full text-center">Početna</a>
-        <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="nav-link py-2 w-full text-center">O nama</a>
-        <a href="#video" onclick="toggleMobilniMeni()" class="nav-link py-2 w-full text-center">Video</a>
-        <a href="#kontakt-mail" onclick="toggleMobilniMeni()" class="nav-link py-2 w-full text-center text-blue-400">Socials</a>
+    <div id="mobilni-meni">
+        <a href="#pocetna" onclick="toggleMobilniMeni()" class="py-4 w-full text-center text-xl font-bold uppercase tracking-widest text-white hover:text-blue-400">Početna</a>
+        <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="py-4 w-full text-center text-xl font-bold uppercase tracking-widest text-white hover:text-blue-400">O nama</a>
+        <a href="#video" onclick="toggleMobilniMeni()" class="py-4 w-full text-center text-xl font-bold uppercase tracking-widest text-white hover:text-blue-400">Video</a>
+        <a href="#kontakt-mail" onclick="toggleMobilniMeni()" class="py-4 w-full text-center text-xl font-bold uppercase tracking-widest text-blue-400">Socials</a>
     </div>
 
     <section id="pocetna" class="pt-40 pb-16 px-6 text-center flex flex-col items-center justify-center min-h-[80vh]">
         <h1 class="text-5xl sm:text-7xl md:text-9xl font-pisana neon-text mb-6">Z-Melos</h1>
         
         <div class="flex flex-wrap justify-center gap-4 mb-10">
-            <a href="http://googleusercontent.com/spotify.com/2" target="_blank" class="glass p-3 rounded-xl hover:scale-110 transition neon-border">
+            <a href="http://googleusercontent.com/spotify.com/3" target="_blank" class="glass p-3 rounded-xl hover:scale-110 transition neon-border">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" class="w-6 h-6" alt="Spotify">
             </a>
             <a href="https://music.apple.com/hr/artist/z-melos/1894602187" target="_blank" class="glass p-3 rounded-xl hover:scale-110 transition neon-border">
@@ -215,8 +235,8 @@
             const line2 = document.getElementById('line2');
             const line3 = document.getElementById('line3');
             
-            if (meni.classList.contains('hidden')) {
-                meni.classList.remove('hidden');
+            if (!meni.classList.contains('otvoren')) {
+                meni.classList.add('otvoren');
                 line2.style.opacity = '0';
                 line1.style.transform = 'translate(4px, 6px) rotate(45deg)';
                 line1.style.transformOrigin = 'left top';
@@ -224,7 +244,7 @@
                 line3.style.transformOrigin = 'left bottom';
                 document.body.style.overflow = 'hidden';
             } else {
-                meni.classList.add('hidden');
+                meni.classList.remove('otvoren');
                 line2.style.opacity = '1';
                 line1.style.transform = 'none';
                 line3.style.transform = 'none';
