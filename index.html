@@ -69,7 +69,7 @@
             </button>
         </div>
 
-        <div id="mobilni-meni" class="fixed inset-0 bg-[#050a15]/98 backdrop-blur-xl flex flex-col items-center justify-start pt-32 gap-10 text-xl font-bold uppercase tracking-widest transform -translate-y-full transition-transform duration-300 md:hidden z-40">
+        <div id="mobilni-meni" class="fixed inset-0 bg-[#050a15]/98 backdrop-blur-xl flex flex-col items-center justify-start pt-32 gap-10 text-xl font-bold uppercase tracking-widest hidden z-40">
             <a href="#pocetna" onclick="toggleMobilniMeni()" class="nav-link py-2 w-full text-center">Početna</a>
             <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="nav-link py-2 w-full text-center">O nama</a>
             <a href="#video" onclick="toggleMobilniMeni()" class="nav-link py-2 w-full text-center">Video</a>
@@ -259,23 +259,30 @@
             const line2 = document.getElementById('line2');
             const line3 = document.getElementById('line3');
             
-            if (meni.classList.contains('-translate-y-full')) {
-                meni.classList.remove('-translate-y-full');
-                meni.classList.add('translate-y-0');
+            // Ako je meni sakriven (ima klasu hidden), prikaži ga
+            if (meni.classList.contains('hidden')) {
+                meni.classList.remove('hidden');
+                
+                // Pretvara 3 crtice u X glatko
                 line2.style.opacity = '0';
                 line1.style.transform = 'translate(4px, 6px) rotate(45deg)';
                 line1.style.transformOrigin = 'left top';
                 line3.style.transform = 'translate(4px, -6px) rotate(-45deg)';
                 line3.style.transformOrigin = 'left bottom';
+                
                 document.body.style.overflow = 'hidden';
             } else {
-                meni.classList.remove('translate-y-0');
-                meni.classList.add('-translate-y-full');
+                // Ako je otvoren, dodaj hidden natrag da nestane
+                meni.classList.add('hidden');
+                
+                // Vraća natrag u 3 crtice
                 line2.style.opacity = '1';
                 line1.style.transform = 'none';
                 line3.style.transform = 'none';
+                
                 document.body.style.overflow = '';
             }
+        }
         }
     </script>
 
