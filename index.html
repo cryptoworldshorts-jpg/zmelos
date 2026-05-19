@@ -13,14 +13,14 @@
 
     <link rel="canonical" href="https://zmelos.com/">
 
-    <link rel="icon" type="image/jpeg" href="https://zmelos.com/zmelos.jpg">
-    <link rel="apple-touch-icon" href="https://zmelos.com/zmelos.jpg">
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/Mp9HDLTH/zmelos.jpg">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/Mp9HDLTH/zmelos.jpg">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zmelos.com/"> 
     <meta property="og:title" content="Z-Melos | Službena Stranica | Autorska Glazba i Hitovi">
     <meta property="og:description" content="Službena stranica glazbenog brenda Z-Melos. Slušajte preko 30 autorskih pjesama na svim digitalnim platformama.">
-    <meta property="og:image" content="https://zmelos.com/zmelos2.png">
+    <meta property="og:image" content="https://i.postimg.cc/nc0nbDtM/zmelos2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -28,7 +28,7 @@
     <meta property="twitter:url" content="https://zmelos.com/">
     <meta property="twitter:title" content="Z-Melos | Službena Stranica | Autorska Glazba">
     <meta property="twitter:description" content="Službena stranica glazbenog brenda Z-Melos. Slušajte preko 30 autorskih pjesama na svim digitalnim platformama.">
-    <meta property="twitter:image" content="https://zmelos.com/zmelos2.png">
+    <meta property="twitter:image" content="https://i.postimg.cc/nc0nbDtM/zmelos2.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
@@ -46,36 +46,37 @@
 <body>
 
     <nav class="fixed w-full z-50 glass border-b border-white/10 px-6 py-3">
-    <div class="max-w-7xl mx-auto flex justify-between items-center relative">
-        
-        <div class="flex items-center gap-3">
-            <img src="https://i.postimg.cc/T2BJ88dD/zmelos.jpg" alt="Z-Melos" class="w-12 h-12 rounded-full object-cover border border-blue-500/50 shadow-lg shadow-blue-500/20">
-            <span class="text-2xl font-pisana text-white neon-text">Z-Melos</span>
-        </div>
-        
-        <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
-            <a href="#pocetna" class="nav-link">Početna</a>
-            <a href="javascript:void(0)" onclick="otvoriONama()" class="nav-link">O nama</a>
-            <a href="#video" class="nav-link">Video</a>
-            <a href="#kontakt-mail" class="nav-link text-blue-400">Socials</a>
+        <div class="max-w-7xl mx-auto flex justify-between items-center relative">
+            
+            <div class="flex items-center gap-3">
+                <img src="https://i.postimg.cc/T2BJ88dD/zmelos.jpg" alt="Z-Melos" class="w-12 h-12 rounded-full object-cover border border-blue-500/50 shadow-lg shadow-blue-500/20">
+                <span class="text-2xl font-pisana text-white neon-text">Z-Melos</span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#pocetna" class="nav-link">Početna</a>
+                <a href="javascript:void(0)" onclick="otvoriONama()" class="nav-link">O nama</a>
+                <a href="#video" class="nav-link">Video</a>
+                <a href="#kontakt-mail" class="nav-link text-blue-400">Socials</a>
+            </div>
+
+            <button onclick="toggleMobilniMeni()" id="hamburger-btn" class="block md:hidden text-blue-400 hover:text-white transition-colors p-2 z-50 focus:outline-none" style="min-width: 44px; min-height: 44px;">
+                <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.6)); transition: all 0.3s;">
+                    <line x1="3" y1="12" x2="21" y2="12" id="line2"></line>
+                    <line x1="3" y1="6" x2="21" y2="6" id="line1"></line>
+                    <line x1="3" y1="18" x2="21" y2="18" id="line3"></line>
+                </svg>
+            </button>
         </div>
 
-        <button onclick="toggleMobilniMeni()" id="hamburger-btn" class="block md:hidden text-blue-400 hover:text-white transition-colors p-2 z-50 focus:outline-none" style="display: block !important; position: relative; min-width: 44px; min-height: 44px;">
-            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.6));">
-                <line x1="3" y1="12" x2="21" y2="12" id="line1"></line>
-                <line x1="3" y1="6" x2="21" y2="6" id="line2"></line>
-                <line x1="3" y1="18" x2="21" y2="18" id="line3"></line>
-            </svg>
-        </button>
-    </div>
+        <div id="mobilni-meni" class="fixed inset-0 bg-[#050a15]/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-lg font-bold uppercase tracking-widest transform -translate-y-full transition-transform duration-300 md:hidden z-40">
+            <a href="#pocetna" onclick="toggleMobilniMeni()" class="nav-link text-xl">Početna</a>
+            <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="nav-link text-xl">O nama</a>
+            <a href="#video" onclick="toggleMobilniMeni()" class="nav-link text-xl">Video</a>
+            <a href="#kontakt-mail" onclick="toggleMobilniMeni()" class="nav-link text-xl text-blue-400">Socials</a>
+        </div>
+    </nav>
 
-    <div id="mobilni-meni" class="fixed inset-0 bg-[#050a15]/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-lg font-bold uppercase tracking-widest transform -translate-y-full transition-transform duration-300 md:hidden z-40">
-        <a href="#pocetna" onclick="toggleMobilniMeni()" class="nav-link text-xl">Početna</a>
-        <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="nav-link text-xl">O nama</a>
-        <a href="#video" onclick="toggleMobilniMeni()" class="nav-link text-xl">Video</a>
-        <a href="#kontakt-mail" onclick="toggleMobilniMeni()" class="nav-link text-xl text-blue-400">Socials</a>
-    </div>
-</nav>
     <section id="pocetna" class="pt-48 pb-20 px-6 text-center">
         <h1 class="text-7xl md:text-9xl font-pisana neon-text mb-8">Z-Melos</h1>
         
@@ -205,7 +206,8 @@
         <p class="text-gray-500 text-xs mb-6 uppercase tracking-widest">© 2026 Sva prava zadržana. Designed by Z-Melos.</p>
         <div class="flex justify-center gap-8 opacity-60 hover:opacity-100 transition">
             <a href="https://facebook.com/profile.php?id=61560485711910" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">Facebook</a>
-            <a href="https://x.com/z_melosofficial" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">X (Twitter)</a> <a href="https://tidal.com/artist/77920223" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">Tidal</a>
+            <a href="https://x.com/z_melosofficial" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">X (Twitter)</a>
+            <a href="https://tidal.com/artist/77920223" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">Tidal</a>
             <a href="https://www.youtube.com/@z-melos" target="_blank" class="text-[10px] uppercase font-bold tracking-widest hover:text-blue-400">YouTube</a>
         </div>
     </footer>
@@ -213,7 +215,7 @@
     <div id="o-nama-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
         <div id="modal-card" class="glass p-8 md:p-16 rounded-[40px] border border-blue-500/10 max-w-5xl w-full relative overflow-hidden transform scale-95 transition-transform duration-300">
             <button onclick="zatvoriONama()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-3xl font-bold transition-colors z-20 focus:outline-none">
-                &times;
+                ×
             </button>
 
             <div class="absolute -top-24 -left-24 w-64 h-64 bg-blue-600/10 blur-[100px]"></div>
@@ -247,6 +249,7 @@
     </div>
 
     <script>
+        // LOGIKA ZA POP-UP WINDOW (O NAMA)
         function otvoriONama() {
             const modal = document.getElementById('o-nama-modal');
             const card = document.getElementById('modal-card');
@@ -263,7 +266,7 @@
             const modal = document.getElementById('o-nama-modal');
             const card = document.getElementById('modal-card');
             modal.classList.add('opacity-0');
-            card.xl = card.classList.remove('scale-100');
+            card.classList.remove('scale-100');
             card.classList.add('scale-95');
             setTimeout(() => {
                 modal.classList.add('hidden');
@@ -276,12 +279,8 @@
                 zatvoriONama();
             }
         });
-    </script>
 
-    <script>
-        // Tvoja stara funkcija za otvoriONama() i zatvoriONama() je ovdje...
-
-        // OVA POPRAVLJENA FUNKCIJA IDE TU ODMAH PORED NJIH:
+        // LOGIKA ZA HAMBURGER MENI (MOBITEL IZBORNIK)
         function toggleMobilniMeni() {
             const meni = document.getElementById('mobilni-meni');
             const line1 = document.getElementById('line1');
@@ -289,9 +288,11 @@
             const line3 = document.getElementById('line3');
             
             if (meni.classList.contains('-translate-y-full')) {
+                // Otvori mobilni izbornik
                 meni.classList.remove('-translate-y-full');
                 meni.classList.add('translate-y-0');
                 
+                // Pretvara 3 crtice u X znak glatko
                 line2.style.opacity = '0';
                 line1.style.transform = 'translate(4px, 6px) rotate(45deg)';
                 line1.style.transformOrigin = 'left top';
@@ -300,9 +301,11 @@
                 
                 document.body.style.overflow = 'hidden';
             } else {
+                // Zatvori mobilni izbornik
                 meni.classList.remove('translate-y-0');
                 meni.classList.add('-translate-y-full');
                 
+                // Vraća X natrag u 3 crtice
                 line2.style.opacity = '1';
                 line1.style.transform = 'none';
                 line3.style.transform = 'none';
@@ -311,5 +314,6 @@
             }
         }
     </script>
+
 </body>
 </html>
