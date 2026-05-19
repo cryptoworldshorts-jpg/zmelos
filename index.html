@@ -46,19 +46,33 @@
 <body>
 
     <nav class="fixed w-full z-50 glass border-b border-white/10 px-6 py-3">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="https://i.postimg.cc/T2BJ88dD/zmelos.jpg" alt="Z-Melos" class="w-12 h-12 rounded-full object-cover border border-blue-500/50 shadow-lg shadow-blue-500/20">
-                <span class="text-2xl font-pisana text-white neon-text">Z-Melos</span>
-            </div>
-            
-            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
-                <a href="#pocetna" class="nav-link">Početna</a>
-                <a href="javascript:void(0)" onclick="otvoriONama()" class="nav-link">O nama</a>
-                <a href="#video" class="nav-link">Video</a>
-                <a href="#kontakt-mail" class="nav-link text-blue-400">Socials</a>
-            </div>
-        </div> </nav>
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="https://i.postimg.cc/T2BJ88dD/zmelos.jpg" alt="Z-Melos" class="w-12 h-12 rounded-full object-cover border border-blue-500/50 shadow-lg shadow-blue-500/20">
+            <span class="text-2xl font-pisana text-white neon-text">Z-Melos</span>
+        </div>
+        
+        <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+            <a href="#pocetna" class="nav-link">Početna</a>
+            <a href="javascript:void(0)" onclick="otvoriONama()" class="nav-link">O nama</a>
+            <a href="#video" class="nav-link">Video</a>
+            <a href="#kontakt-mail" class="nav-link text-blue-400">Socials</a>
+        </div>
+
+        <button onclick="toggleMobilniMeni()" id="hamburger-btn" class="block md:hidden text-white focus:outline-none z-50 relative p-2">
+            <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobilni-meni" class="fixed inset-0 bg-[#050a15]/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8 text-lg font-bold uppercase tracking-widest transform -translate-y-full transition-transform duration-300 md:hidden z-40">
+        <a href="#pocetna" onclick="toggleMobilniMeni()" class="nav-link text-xl">Početna</a>
+        <a href="javascript:void(0)" onclick="toggleMobilniMeni(); otvoriONama();" class="nav-link text-xl">O nama</a>
+        <a href="#video" onclick="toggleMobilniMeni()" class="nav-link text-xl">Video</a>
+        <a href="#kontakt-mail" onclick="toggleMobilniMeni()" class="nav-link text-xl text-blue-400">Socials</a>
+    </div>
+</nav>
 
     <section id="pocetna" class="pt-48 pb-20 px-6 text-center">
         <h1 class="text-7xl md:text-9xl font-pisana neon-text mb-8">Z-Melos</h1>
@@ -261,6 +275,30 @@
             }
         });
     </script>
+
+    function toggleMobilniMeni() {
+    const meni = document.getElementById('mobilni-meni');
+    const ikona = document.getElementById('hamburger-icon');
+    
+    // Provjeri je li meni trenutno skriven (provjeravamo klasu -translate-y-full)
+    if (meni.classList.contains('-translate-y-full')) {
+        // Otvori meni (spusti ga)
+        meni.classList.remove('-translate-y-full');
+        meni.classList.add('translate-y-0');
+        // Promijeni 3 crtice u "X" ikonu
+        ikona.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+        // Zaustavi skrolanje u pozadini dok je meni otvoren
+        document.body.style.overflow = 'hidden';
+    } else {
+        // Zatvori meni (podigni ga gore)
+        meni.classList.remove('translate-y-0');
+        meni.classList.add('-translate-y-full');
+        // Vrati ikonu na 3 crtice
+        ikona.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+        // Dopusti normalno skrolanje
+        document.body.style.overflow = '';
+    }
+}
 
 </body>
 </html>
