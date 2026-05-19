@@ -207,13 +207,13 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-2/2">
+                <div class="w-full md:w-2/3">
                     <div class="space-y-4 text-gray-300 text-base leading-relaxed italic">
                         <p>
                             Dobrodošli u središte glazbenog brenda <span class="text-white font-bold">Z-Melos</span> – neovisnog autorskog projekta koji spaja iskrenu emociju, životne priče i prepoznatljiv melos naših prostora.
                         </p>
                         <p>
-                            S katalogom od preko <span class="text-blue-400 font-bold">30 autorskih pjesama</span>, Z-Melos donosi jedinstven glazbeni izričaj. Svaka pjesma stvorena je s jednim ciljem – da dotakne srce slušatelja.
+                            S katalogom od preko <span class="text-blue-400 font-bold">30 autorskih pjesama</span>, Z-Melos donosi jedinstven glazbeni izričaj. Svaka pjesma stvorena is s jednim ciljem – da dotakne srce slušatelja.
                         </p>
                         <p>
                             Hvala našoj vjernoj publici iz cijelog svijeta i dijaspore koja svakodnevno dijeli našu glazbu na mrežama i drži naše hitove poput <span class="text-white underline decoration-blue-500/50">„Soli u duši“</span> i <span class="text-white underline decoration-blue-500/50">„Konoba čeka“</span> na svojim playlistama.
@@ -259,11 +259,9 @@
             const line2 = document.getElementById('line2');
             const line3 = document.getElementById('line3');
             
-            // Ako je meni sakriven (ima klasu hidden), prikaži ga
             if (meni.classList.contains('hidden')) {
                 meni.classList.remove('hidden');
                 
-                // Pretvara 3 crtice u X glatko
                 line2.style.opacity = '0';
                 line1.style.transform = 'translate(4px, 6px) rotate(45deg)';
                 line1.style.transformOrigin = 'left top';
@@ -272,17 +270,14 @@
                 
                 document.body.style.overflow = 'hidden';
             } else {
-                // Ako je otvoren, dodaj hidden natrag da nestane
                 meni.classList.add('hidden');
                 
-                // Vraća natrag u 3 crtice
                 line2.style.opacity = '1';
                 line1.style.transform = 'none';
                 line3.style.transform = 'none';
                 
                 document.body.style.overflow = '';
             }
-        }
         }
     </script>
 
