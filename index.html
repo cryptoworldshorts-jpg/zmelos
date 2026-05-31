@@ -241,6 +241,15 @@ Danas sluga plavim očima
                  <button onclick="otvoriTekst('pjesma-1')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
              </div>
         </div>
+
+        <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/bEjV5VW54nc" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Sol u duši</span>
+        <!-- OBRATI PAŽNJU: Ovdje koristimo data-target="sol-u-dusi" -->
+        <button onclick="otvoriTekst(this)" data-target="sol-u-dusi" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
         
         <div class="glass p-2 rounded-xl neon-border">
              <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/bEjV5VW54nc" frameborder="0" allowfullscreen></iframe>
@@ -532,6 +541,40 @@ Ne pitajte me ništa više sad
 svatko nosi svoj mali pad
 ja nosim nju kroz svaki dan
 iako više nisam njen.</p>
+    </div>
+</div>
+
+<!-- OBRATI PAŽNJU: Ovdje ID mora biti isti kao data-target gore (sol-u-dusi) -->
+<div id="sol-u-dusi" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Sol u duši</h3>
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Gledan u prazno dok cili grad spava
+u kapi mora tražin ta dva oka plava
+Pusta je vala, a bonaca me guši
+ostala je samo ova sol u duši
+
+Nek ova kiša noćas sakrije mi suze
+kad te netko drugi iz mog krila uze
+Oprosti mi što ne znam kako se odlazi
+dok mi život bez tvog svitla prolazi
+
+Ne tražin krivca, sudbina je takva bila
+polomila nam pisma svoja bila krila
+Zatvaran knjigu nek je prašina sakrije
+ka da nas dvoje nikad bilo nije
+
+I ne pitaj me zašto još u luku gledan
+kad znam da nisan onaj kojeg čekaš
+U svakom valu još te malo tražin
+dok ovu tugu dalmatinsku blažin
+
+Nek ova kiša noćas sakrije mi suze
+kad te netko drugi iz mog krila uze
+Oprosti mi što ne znam kako se odlazi
+dok mi život bez tvog svitla prolazi
+        </p>
     </div>
 </div>
 
@@ -1799,6 +1842,20 @@ Ovo ljeto samo naše
             document.body.style.overflow = 'auto';
         }
     }
+</script>
+
+    <script>
+function otvoriTekst(button) {
+    const targetId = button.getAttribute('data-target');
+    document.getElementById(targetId).classList.remove('hidden');
+    document.getElementById(targetId).classList.add('flex');
+}
+
+function zatvoriTekst(button) {
+    const modal = button.closest('.fixed');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
 </script>
     
 </body>
