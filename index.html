@@ -235,12 +235,22 @@ Danas sluga plavim očima
     <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
          <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/EJgda_3SFAI" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Ne pitajte me ništa</span>
-                 <button onclick="otvoriTekst('pjesma-1')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/EJgda_3SFAI" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Ne pitajte me ništa</span>
+        <!-- Ovdje je ključna promjena: data-target="ne-pitajte-me-nista" -->
+        <button onclick="otvoriTekst(this)" data-target="ne-pitajte-me-nista" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
+
+        <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/bEjV5VW54nc" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Ne pitajte me ništa</span>
+        <!-- OBRATI PAŽNJU: Ovdje koristimo data-target="Ne pitajte me ništa" -->
+        <button onclick="otvoriTekst(this)" data-target="ne-pitaj-me-nista" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
         <div class="glass p-2 rounded-xl neon-border">
     <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/bEjV5VW54nc" frameborder="0" allowfullscreen></iframe>
@@ -251,245 +261,264 @@ Danas sluga plavim očima
     </div>
 </div>
         
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/bEjV5VW54nc" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Sol u duši</span>
-                 <button onclick="otvoriTekst('pjesma-1)" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+        
 
         <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/zjGk6swQesM" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Zelena polja</span>
-                 <button onclick="otvoriTekst('pjesma-2')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/zjGk6swQesM" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Zelena polja</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-zelena-polja" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
         <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/qcJYZasSrWk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Živim dan po dan</span>
-                 <button onclick="otvoriTekst('pjesma-3')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
-
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/qcJYZasSrWk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Živim dan po dan</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-zivim-dan-po-dan" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
         <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/v37HI9NmuS8" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Što to tebe ljuti</span>
-                 <button onclick="otvoriTekst('pjesma-4')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/v37HI9NmuS8" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Što to tebe ljuti</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-sto-to-tebe-ljuti" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-            <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/nevRgw7htRc" frameborder="0" allowfullscreen></iframe>
-            <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                <span class="text-sm font-semibold text-gray-300">Nije mi ža</span>
-                <button onclick="otvoriTekst('pjesma-5')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-            </div>
-        </div>
+        <!-- Pjesma 5: Nije mi ža -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/nevRgw7htRc" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Nije mi ža</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-nije-mi-za" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/5iKN3QT1lME" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Sipaj duplo</span>
-                 <button onclick="otvoriTekst('pjesma-6')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 6: Sipaj duplo -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/5iKN3QT1lME" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Sipaj duplo</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-sipaj-duplo" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/71KoBiVUyXM" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Ne vraćam se</span>
-                 <button onclick="otvoriTekst('pjesma-7')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 7: Ne vraćam se -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/71KoBiVUyXM" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Ne vraćam se</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-ne-vracam-se" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/hHqOrhKpwkk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Koraci prošlosti</span>
-                 <button onclick="otvoriTekst('pjesma-8')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 8: Koraci prošlosti -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/hHqOrhKpwkk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Koraci prošlosti</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-koraci-proslosti" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/0lNinqNlx4Y" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Ne volim stanice</span>
-                 <button onclick="otvoriTekst('pjesma-9')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 9: Ne volim stanice -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/0lNinqNlx4Y" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Ne volim stanice</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-ne-volim-stanice" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/eC08JTcIQV0" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Korak po korak</span>
-                 <button onclick="otvoriTekst('pjesma-10')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 10: Korak po korak -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/eC08JTcIQV0" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Korak po korak</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-korak-po-korak" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/7XuAn3Y_iLE" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Plavi vali</span>
-                 <button onclick="otvoriTekst('pjesma-11')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 11: Plavi vali -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/7XuAn3Y_iLE" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Plavi vali</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-plavi-vali" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/X7Z1jClDEvo" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Plave oči</span>
-                 <button onclick="otvoriTekst('pjesma-12')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 12: Plave oči -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/X7Z1jClDEvo" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Plave oči</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-plave-oci" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/TdanRqsRtnU" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Nepozvan gost</span>
-                 <button onclick="otvoriTekst('pjesma-13')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 13: Nepozvan gost -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/TdanRqsRtnU" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Nepozvan gost</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-nepozvan-gost" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/-p2AE_b96IQ" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Tuđa zemlja</span>
-                 <button onclick="otvoriTekst('pjesma-14')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 14: Tuđa zemlja -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/-p2AE_b96IQ" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Tuđa zemlja</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-tuda-zemlja" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/Ebe7LvP-qpY" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Pusti buru</span>
-                 <button onclick="otvoriTekst('pjesma-15')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 15: Pusti buru -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/Ebe7LvP-qpY" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Pusti buru</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-pusti-buru" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/F3fs0vRuAyk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Konoba čeka</span>
-                 <button onclick="otvoriTekst('pjesma-16')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 16: Konoba čeka -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/F3fs0vRuAyk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Konoba čeka</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-konoba-ceka" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/2knHPrP9ARQ" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Večeras sam gazda</span>
-                 <button onclick="otvoriTekst('pjesma-17')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 17: Večeras sam gazda -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/2knHPrP9ARQ" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Večeras sam gazda</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-veceras-sam-gazda" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/4COuw__LZOk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Slavonac moj mali</span>
-                 <button onclick="otvoriTekst('pjesma-18')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 18: Slavonac moj mali -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/4COuw__LZOk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Slavonac moj mali</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-slavonac-moj-mali" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/qZXrIe8W79I" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Koliko ovo traje</span>
-                 <button onclick="otvoriTekst('pjesma-19')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 19: Koliko ovo traje -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/qZXrIe8W79I" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Koliko ovo traje</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-koliko-ovo-traje" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/GLmYwHHFFpk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Pokaži mi trag</span>
-                 <button onclick="otvoriTekst('pjesma-20')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 20: Pokaži mi trag -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/GLmYwHHFFpk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Pokaži mi trag</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-pokazi-mi-trag" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/yPdLYF5ceyA" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Još te u meni previše ima</span>
-                 <button onclick="otvoriTekst('pjesma-21')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 21: Još te u meni previše ima -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/yPdLYF5ceyA" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Još te u meni previše ima</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-jos-te-u-meni-previse-ima" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/UYO-dxz7jSg" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Metropola</span>
-                 <button onclick="otvoriTekst('pjesma-22')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 22: Metropola -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/UYO-dxz7jSg" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Metropola</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-metropola" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/94m_blAd5Tw" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Junak u tuđim očima</span>
-                 <button onclick="otvoriTekst('pjesma-23')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 23: Junak u tuđim očima -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/94m_blAd5Tw" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Junak u tuđim očima</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-junak-u-tudjim-ocima" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/rdTgymPzBLo" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Nisan te tražija</span>
-                 <button onclick="otvoriTekst('pjesma-24')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 24: Nisan te tražija -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/rdTgymPzBLo" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Nisan te tražija</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-nisan-te-trazija" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/d2BGD0C4-N4" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Za dvoje sam volio</span>
-                 <button onclick="otvoriTekst('pjesma-25')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 25: Za dvoje sam volio -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/d2BGD0C4-N4" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Za dvoje sam volio</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-za-dvoje-sam-volio" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/IsiY50YsrCk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Ti sve to baci</span>
-                 <button onclick="otvoriTekst('pjesma-26')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 26: Ti sve to baci -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/IsiY50YsrCk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Ti sve to baci</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-ti-sve-to-baci" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/AvvRpQUprs0" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Art Zadar</span>
-                 <button onclick="otvoriTekst('pjesma-27')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 27: Art Zadar -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/AvvRpQUprs0" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Art Zadar</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-art-zadar" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/truNafUX9zk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Čovjek koji me iznevjerio</span>
-                 <button onclick="otvoriTekst('pjesma-28')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 28: Čovjek koji me iznevjerio -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/truNafUX9zk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Čovjek koji me iznevjerio</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-covjek-koji-me-iznevjerio" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/NmT-8D1ODdI" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Tko je pobijedio</span>
-                 <button onclick="otvoriTekst('pjesma-29')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 29: Tko je pobijedio -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/NmT-8D1ODdI" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Tko je pobijedio</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-tko-je-pobijedio" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
-        <div class="glass p-2 rounded-xl neon-border">
-             <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/PvcZz4h4xqk" frameborder="0" allowfullscreen></iframe>
-             <div class="mt-3 flex justify-between items-center px-2 pb-1">
-                 <span class="text-sm font-semibold text-gray-300">Dobra formula</span>
-                 <button onclick="otvoriTekst('pjesma-30')" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
-             </div>
-        </div>
+<!-- Pjesma 30: Dobra formula -->
+<div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/PvcZz4h4xqk" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Dobra formula</span>
+        <button onclick="otvoriTekst(this)" data-target="modal-dobra-formula" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
     </div>
 
@@ -500,47 +529,51 @@ Danas sluga plavim očima
     </div>
 </section>
 
-    <div id="modal-pjesma-1" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <!-- ID mora biti isti kao data-target u tvom dugmetu -->
+<div id="modal-ne-pitajte-me-nista" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-1')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <!-- Ovdje koristimo zatvoriTekst(this) umjesto 'pjesma-1' -->
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Ne pitajte me ništa</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Ne pitajte me ništa prijatelji moji
-ne tražite riječi za ono što boli
-u čaši je tišina u meni je trag
-od svega što bio je nekada znak
-Šetam kroz dane ko da sam tu
-al misli mi bježe na istu tu nju
-i sve što je bilo još živi u meni
-u svakom tom pogledu skrivenom u sjeni
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Ne pitajte me ništa prijatelji moji
+            ne tražite riječi za ono što boli
+            u čaši je tišina u meni je trag
+            od svega što bio je nekada znak
+            Šetam kroz dane ko da sam tu
+            al misli mi bježe na istu tu nju
+            i sve što je bilo još živi u meni
+            u svakom tom pogledu skrivenom u sjeni
 
-Dao bih sve da joj vidim oči
-onako kako sjaje u noći
-kad se nasmije svijet se promijeni
-i nešto pukne u meni
-Ne pitajte me zašto još znam
-svaki joj pogled napamet znam
-nije više moja, to dobro znam
-al još je tu negdje u mislima
+            Dao bih sve da joj vidim oči
+            onako kako sjaje u noći
+            kad se nasmije svijet se promijeni
+            i nešto pukne u meni
+            Ne pitajte me zašto još znam
+            svaki joj pogled napamet znam
+            nije više moja, to dobro znam
+            al još je tu negdje u mislima
 
-Ne pitajte gdje je ni s kim je sad
-ne želim znati al znam svaki grad
-gdje smo se smijali gdje smo bili mi
-gdje su još ostali naši tragovi svi
+            Ne pitajte gdje je ni s kim je sad
+            ne želim znati al znam svaki grad
+            gdje smo se smijali gdje smo bili mi
+            gdje su još ostali naši tragovi svi
 
-Možda sam trebao pustiti sve
-možda sam vjerovao previše
-al neke slike ostanu tu
-i ne blijede nikad ni u snu
+            Možda sam trebao pustiti sve
+            možda sam vjerovao previše
+            al neke slike ostanu tu
+            i ne blijede nikad ni u snu
 
-Dao bih sve da joj vidim oči
-onako kako sjaje u noći
-kad se nasmije svijet se promijeni
-i nešto pukne u meni
+            Dao bih sve da joj vidim oči
+            onako kako sjaje u noći
+            kad se nasmije svijet se promijeni
+            i nešto pukne u meni
 
-Ne pitajte me ništa više sad
-svatko nosi svoj mali pad
-ja nosim nju kroz svaki dan
-iako više nisam njen.</p>
+            Ne pitajte me ništa više sad
+            svatko nosi svoj mali pad
+            ja nosim nju kroz svaki dan
+            iako više nisam njen.
+        </p>
     </div>
 </div>
 
@@ -578,1063 +611,1072 @@ dok mi život bez tvog svitla prolazi
     </div>
 </div>
 
-<div id="modal-pjesma-1" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+
+<div id="modal-zelena-polja" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-1')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
-        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Sol u duši</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Gledan u prazno dok cili grad spava
-u kapi mora tražin ta dva oka plava
-Pusta je vala, a bonaca me guši
-ostala je samo ova sol u duši
-
-Nek ova kiša noćas sakrije mi suze
-kad te netko drugi iz mog krila uze
-Oprosti mi što ne znam kako se odlazi
-dok mi život bez tvog svitla prolazi
-
-Ne tražin krivca, sudbina je takva bila
-polomila nam pisma svoja bila krila
-Zatvaran knjigu nek je prašina sakrije
-ka da nas dvoje nikad bilo nije
-
-I ne pitaj me zašto još u luku gledan
-kad znam da nisan onaj kojeg čekaš
-U svakom valu još te malo tražin
-dok ovu tugu dalmatinsku blažin
-
-Nek ova kiša noćas sakrije mi suze
-kad te netko drugi iz mog krila uze
-Oprosti mi što ne znam kako se odlazi
-dok mi život bez tvog svitla prolazi</p>
-    </div>
-</div>
-
-<div id="modal-pjesma-2" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
-    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-2')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Zelena polja</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Još je jedno jutro svanulo
-na zelena polja sunce je granulo
-Gledam žito što ga vjetar njiše
-ovdje moja duša s lakoćom diše
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Još je jedno jutro svanulo
+            na zelena polja sunce je granulo
+            Gledam žito što ga vjetar njiše
+            ovdje moja duša s lakoćom diše
 
-Nek sviraju tambure nek se sela bude 
-pokaži svijetu ove dobre ljude
-Nek se pjesma ori nek ravnica zna
-tu je moja sreća tu sam rođen ja 
+            Nek sviraju tambure nek se sela bude 
+            pokaži svijetu ove dobre ljude
+            Nek se pjesma ori nek ravnica zna
+            tu je moja sreća tu sam rođen ja 
 
-Ovdje jutra mirišu na rosu
-uz stari hrast što nebo dotiče
-tu se pričaju moje najbolje priče
-Nisam otputovao nit je srce htjelo
-ovdje je moje i duša i tijelo
+            Ovdje jutra mirišu na rosu
+            uz stari hrast što nebo dotiče
+            tu se pričaju moje najbolje priče
+            Nisam otputovao nit je srce htjelo
+            ovdje je moje i duša i tijelo
 
-Nek sviraju tambure nek se sela bude 
-pokaži svijetu ove dobre ljude
-Nek se pjesma ori nek ravnica zna
-tu je moja sreća tu sam rođen ja </p>
+            Nek sviraju tambure nek se sela bude 
+            pokaži svijetu ove dobre ljude
+            Nek se pjesma ori nek ravnica zna
+            tu je moja sreća tu sam rođen ja
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-3" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-zivim-dan-po-dan" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-3')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Živim dan po dan</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Danima već mislim na tebe
-živim dan po dan lažem samog sebe.
-Uzalud čekam istinu već znam
-na kraju priče opet ostah sam
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Danima već mislim na tebe
+            živim dan po dan lažem samog sebe.
+            Uzalud čekam istinu već znam
+            na kraju priče opet ostah sam
 
-Živim dan po dan, a ko da ne postojim
-sate bez tebe više i ne brojim.
-Čekam tvoj trag, a pijem za kraj
-vrtim se u krug plaćam stari dug
+            Živim dan po dan, a ko da ne postojim
+            sate bez tebe više i ne brojim.
+            Čekam tvoj trag, a pijem za kraj
+            vrtim se u krug plaćam stari dug
 
-Provodim dane, provodim noći
-manje više u samoći.
-Sve je stalo samo tuga teče
-ubija me svako novo veče
+            Provodim dane, provodim noći
+            manje više u samoći.
+            Sve je stalo samo tuga teče
+            ubija me svako novo veče
 
-Znam da je kraj nema nam spasa
-ostala je tuga nema tvoga glasa
+            Znam da je kraj nema nam spasa
+            ostala je tuga nema tvoga glasa
 
-Živim dan po dan, a ko da ne postojim
-sate bez tebe više i ne brojim.
-Čekam tvoj trag, a pijem za kraj
-vrtim se u krug plaćam stari dug.</p>
+            Živim dan po dan, a ko da ne postojim
+            sate bez tebe više i ne brojim.
+            Čekam tvoj trag, a pijem za kraj
+            vrtim se u krug plaćam stari dug.
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-4" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-sto-to-tebe-ljuti" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-4')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Što to tebe ljuti</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Prijatelju stari u oči se gleda
-pošten se čovjek tišini ne preda
-Otišao si tiho bez ijedne riječi
-od čega te to tvoja šutnja liječi
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Prijatelju stari u oči se gleda
+            pošten se čovjek tišini ne preda
+            Otišao si tiho bez ijedne riječi
+            od čega te to tvoja šutnja liječi
 
-Nek ti je sretno prijatelju stari
-tvoj odlazak mi više sreću ne kvari
-Smetali ti moji koraci i puti
-nije mi jasno što to tebe ljuti
+            Nek ti je sretno prijatelju stari
+            tvoj odlazak mi više sreću ne kvari
+            Smetali ti moji koraci i puti
+            nije mi jasno što to tebe ljuti
 
-Zašto moji koraci smetali su tebi
-kad bio sam ti tu i kad nisam bio sebi
+            Zašto moji koraci smetali su tebi
+            kad bio sam ti tu i kad nisam bio sebi
 
-Nek ti je sretno prijatelju stari
-tvoj odlazak mi više sreću ne kvari
-Smetali ti moji koraci i puti
-nije mi jasno što to tebe ljuti
+            Nek ti je sretno prijatelju stari
+            tvoj odlazak mi više sreću ne kvari
+            Smetali ti moji koraci i puti
+            nije mi jasno što to tebe ljuti
 
-Zašto moji koraci smetali su tebi,
-kad bio sam ti tu i kad nisam bio sebi
+            Zašto moji koraci smetali su tebi,
+            kad bio sam ti tu i kad nisam bio sebi
 
-Smetali ti moji koraci i puti,
-nije mi jasno što to tebe ljuti.</p>
+            Smetali ti moji koraci i puti,
+            nije mi jasno što to tebe ljuti.
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-5" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-nije-mi-za" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-5')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Nije mi ža</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Na rivi sidin sunce polako tone
-U vali još čujen korake tvoje
-Smijali smo se ka dvoje dice
-Dok su nas nosile morske vale
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Na rivi sidin sunce polako tone
+            U vali još čujen korake tvoje
+            Smijali smo se ka dvoje dice
+            Dok su nas nosile morske vale
 
-Bura je tvoje ime znala reć
-A jugo te nosilo kroz večer već
-Nismo znali di će nas vrime odnit
-Al znali smo lipo živit svaki tren
+            Bura je tvoje ime znala reć
+            A jugo te nosilo kroz večer već
+            Nismo znali di će nas vrime odnit
+            Al znali smo lipo živit svaki tren
 
-I nije mi ža kad te se sitin
-Samo mi srce zaigra pa šutin
-Jer neke jubavi ne tribaju kraj
-Dovoljno je da su bile raj
+            I nije mi ža kad te se sitin
+            Samo mi srce zaigra pa šutin
+            Jer neke jubavi ne tribaju kraj
+            Dovoljno je da su bile raj
 
-Ako te ikad opet vrati put
-Naći ćeš mene na istome mistu
-More će znat sve riči za nas
-Jer još miriše more na nas
+            Ako te ikad opet vrati put
+            Naći ćeš mene na istome mistu
+            More će znat sve riči za nas
+            Jer još miriše more na nas
 
-Samo mi srce zaigra znan
-Kad mi te vrati miris i dan
-I neka vrime odnese sve
-More još pamti i mene i tebe
+            Samo mi srce zaigra znan
+            Kad mi te vrati miris i dan
+            I neka vrime odnese sve
+            More još pamti i mene i tebe
 
-Jer neke jubavi ne tribaju kraj
-Dovoljno je da su bile raj
-I kad te nema ti si mi tu
-U svakoj vali u svakome snu
-</p>
+            Jer neke jubavi ne tribaju kraj
+            Dovoljno je da su bile raj
+            I kad te nema ti si mi tu
+            U svakoj vali u svakome snu
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-6" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-sipaj-duplo" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-6')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Sipaj duplo</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Opet ista ulica i isti grad
-a ja ko i nekada, ludo mlad
-čaša mi u ruci u srcu lom
-ti si negdje sretna u domu svom
-A ja još po starom ne pitaj kako
-navikne se čovjek na tugu polako
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Opet ista ulica i isti grad
+            a ja ko i nekada, ludo mlad
+            čaša mi u ruci u srcu lom
+            ti si negdje sretna u domu svom
+            A ja još po starom ne pitaj kako
+            navikne se čovjek na tugu polako
 
-Al kad harmonika zasvira tu stvar
-u meni se probudi onaj stari žar
+            Al kad harmonika zasvira tu stvar
+            u meni se probudi onaj stari žar
 
-Sipaj duplo neka gori kafana
-neka zaboli me svaka tvoja rana
-Nek se čuje do zore, nek se čuje do neba
-to je sve što meni ove noći treba
-Lomi čaše lomi sudbinu moju
-još sam u srcu ostao na tvome broju
+            Sipaj duplo neka gori kafana
+            neka zaboli me svaka tvoja rana
+            Nek se čuje do zore, nek se čuje do neba
+            to je sve što meni ove noći treba
+            Lomi čaše lomi sudbinu moju
+            još sam u srcu ostao na tvome broju
 
+            Gledaju me drugovi kažu stani malo
+            al tebi je do mene premalo stalo.
+            Neka ide život neka ide sve
+            ja ne znam drugačije bez tebe
 
-Gledaju me drugovi kažu stani malo
-al tebi je do mene premalo stalo.
-Neka ide život neka ide sve
-ja ne znam drugačije bez tebe
-
-Sipaj duplo neka gori kafana
-neka zaboli me svaka tvoja rana
-Nek se čuje do zore nek se čuje do neba
-to je sve što meni ove noći treba
-Lomi čaše lomi sudbinu moju
-još sam u srcu ostao na tvome broju</p>
+            Sipaj duplo neka gori kafana
+            neka zaboli me svaka tvoja rana
+            Nek se čuje do zore nek se čuje do neba
+            to je sve što meni ove noći treba
+            Lomi čaše lomi sudbinu moju
+            još sam u srcu ostao na tvome broju
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-7" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-ne-vracam-se" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-7')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Ne vraćam se</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Hodam kroz grad ne prolazim kroz njen
-svaki me put vodi što dalje od njeg
-Noge same bježe, a srce bi stalo
-da tamo ostane bar još ono malo.
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Hodam kroz grad ne prolazim kroz njen
+            svaki me put vodi što dalje od njeg
+            Noge same bježe, a srce bi stalo
+            da tamo ostane bar još ono malo.
 
-Ne zastajem bježim od vlastite sjene
-da te ulice ne prepoznaju mene.
-Taj grad još čuva sve što bili smo mi
-svaka me ulica na tebe podsjeti.
+            Ne zastajem bježim od vlastite sjene
+            da te ulice ne prepoznaju mene.
+            Taj grad još čuva sve što bili smo mi
+            svaka me ulica na tebe podsjeti.
 
-Ne vraćam se i kad me tuga dotuče
-i kad me srce onamo vuče
-Dio mene zauvijek tamo je ostao
-sjenka u gradu što je tuđim postao
+            Ne vraćam se i kad me tuga dotuče
+            i kad me srce onamo vuče
+            Dio mene zauvijek tamo je ostao
+            sjenka u gradu što je tuđim postao
 
-Jednom ću doći, al zadnji put zna
-samo da sebi priznam da stvarno je kraj
-Ne tražim tebe sad to dobro znam
-već da ovoj pustoj duši malo mira dam
+            Jednom ću doći, al zadnji put zna
+            samo da sebi priznam da stvarno je kraj
+            Ne tražim tebe sad to dobro znam
+            već da ovoj pustoj duši malo mira dam
 
-Ne vraćam se i kad me tuga dotuče
-i kad me srce onamo vuče.
-Dio mene zauvijek tamo je ostao
-sjenka u gradu što je tuđim postao
-</p>
+            Ne vraćam se i kad me tuga dotuče
+            i kad me srce onamo vuče.
+            Dio mene zauvijek tamo je ostao
+            sjenka u gradu što je tuđim postao
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-8" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-koraci-proslosti" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-8')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Koraci prošlosti</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Budim se, a jutro ko da kasni
-u sobi tišina u meni krici glasni.
-Koraci prošlosti što ne daju da stanem
-čekam novi dan da te više ne sanjam.
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Budim se, a jutro ko da kasni
+            u sobi tišina u meni krici glasni.
+            Koraci prošlosti što ne daju da stanem
+            čekam novi dan da te više ne sanjam.
 
-Svake noći vrtim isti film,
-tvoje oči isti stari dim.
-Zar je moguće da sam sebe dao
-nekome ko me voljeti nije znao
+            Svake noći vrtim isti film,
+            tvoje oči isti stari dim.
+            Zar je moguće da sam sebe dao
+            nekome ko me voljeti nije znao
 
-I pijem noćas da zaborav svratim
-al svaka čaša tebi me vrati
-U svakom licu tražim tvoj trag,
-al nema te više izgubljen trag
+            I pijem noćas da zaborav svratim
+            al svaka čaša tebi me vrati
+            U svakom licu tražim tvoj trag,
+            al nema te više izgubljen trag
 
-Nema te nema ni sjene tvoje
-prazne su noći i zore moje
-Svjetla grada tješe me lažno
-kad tebe nema ništa nije važno
+            Nema te nema ni sjene tvoje
+            prazne su noći i zore moje
+            Svjetla grada tješe me lažno
+            kad tebe nema ništa nije važno
 
-Budim se al ne budim se stvarno
-jer bez tebe jutro je nebitno i strano
-Prazne su čaše, a tuga je kazna,
-bez tebe je ova duša skroz prazna</p>
+            Budim se al ne budim se stvarno
+            jer bez tebe jutro je nebitno i strano
+            Prazne su čaše, a tuga je kazna,
+            bez tebe je ova duša skroz prazna
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-9" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-ne-volim-stanice" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-9')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Ne volim stanice</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Nikad nisam volio ove stanice
-Gdje se ljudi sretnu brišu granice
-Gledam te osmijehe i ruke što se traže
-Dok meni tišina neku drugu priču kaže
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Nikad nisam volio ove stanice
+            Gdje se ljudi sretnu brišu granice
+            Gledam te osmijehe i ruke što se traže
+            Dok meni tišina neku drugu priču kaže
 
-Svi imaju nekog da im teret uzme
-Da im zagrljajem sve brige odnese
-A ja samo prođem, ne dižem ni glavu
-Dok me noge same u samoću nose
+            Svi imaju nekog da im teret uzme
+            Da im zagrljajem sve brige odnese
+            A ja samo prođem, ne dižem ni glavu
+            Dok me noge same u samoću nose
 
-Ne volim stanice gdje me nitko ne čeka
-Gdje je svaka sreća od mene daleka
-U moru ljudi, ja sam otok sivi
-Što samo za naše uspomene živi
+            Ne volim stanice gdje me nitko ne čeka
+            Gdje je svaka sreća od mene daleka
+            U moru ljudi, ja sam otok sivi
+            Što samo za naše uspomene živi
 
-A sati prolaze, ja stojim u mjestu
-I dalje čekam neku tvoju gestu
-Sve u meni odbija da shvati
-Da se više meni nećeš vratit
+            A sati prolaze, ja stojim u mjestu
+            I dalje čekam neku tvoju gestu
+            Sve u meni odbija da shvati
+            Da se više meni nećeš vratit
 
-Zatvorim oči pa zamislim tebe
-I onaj osmijeh što me u život vrati
-Otvorim oči i bolno shvatim
-Nema te ne čekaš me
+            Zatvorim oči pa zamislim tebe
+            I onaj osmijeh što me u život vrati
+            Otvorim oči i bolno shvatim
+            Nema te ne čekaš me
 
-Ne volim stanice gdje me nitko ne čeka
-Gdje je svaka sreća od mene daleka
-U moru ljudi ja sam otok sivi
-Što samo za naše uspomene živi
+            Ne volim stanice gdje me nitko ne čeka
+            Gdje je svaka sreća od mene daleka
+            U moru ljudi ja sam otok sivi
+            Što samo za naše uspomene živi
 
-A sati prolaze ja stojim u mjestu
-I dalje čekam neku tvoju gestu
-Sve u meni odbija da shvati
-Da se više meni nećeš vratit
+            A sati prolaze ja stojim u mjestu
+            I dalje čekam neku tvoju gestu
+            Sve u meni odbija da shvati
+            Da se više meni nećeš vratit
 
-Nema te
-Ne čekaš me
-Još jedna stanica bez tebe</p>
+            Nema te
+            Ne čekaš me
+            Još jedna stanica bez tebe
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-10" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-korak-po-korak" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-10')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Korak po korak</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Korak po korak, krivi smjer
-a ja sam mislio vrijedi sve
-Sve je krenulo ko priča bez kraja
-smijeh i noći što traju do dana
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Korak po korak, krivi smjer
+            a ja sam mislio vrijedi sve
+            Sve je krenulo ko priča bez kraja
+            smijeh i noći što traju do dana
 
-Mislio sam to je to
-naivno sam srcu vjerovao
+            Mislio sam to je to
+            naivno sam srcu vjerovao
 
-Grad je isti, al bez tebe nije
-sve je glasno, a meni sve tiše
-Sad tek vidim gdje sam pao
-kad sam bez tebe ostao
-Vidio sam al priznao nisam
-da ti u srcu ni sjena nisam
+            Grad je isti, al bez tebe nije
+            sve je glasno, a meni sve tiše
+            Sad tek vidim gdje sam pao
+            kad sam bez tebe ostao
+            Vidio sam al priznao nisam
+            da ti u srcu ni sjena nisam
 
-Sve si mi rekla bez ijedne riječi
-više me ništa od toga ne liječi
-Korak po korak, krivi smjer
-a ja sam mislio vrijedi sve
+            Sve si mi rekla bez ijedne riječi
+            više me ništa od toga ne liječi
+            Korak po korak, krivi smjer
+            a ja sam mislio vrijedi sve
 
-Sad vidim kako lako ideš
-dok ja od sebe istinu krijem
-Vidio sam al priznao nisam
-da ti u srcu ni sjena nisam
+            Sad vidim kako lako ideš
+            dok ja od sebe istinu krijem
+            Vidio sam al priznao nisam
+            da ti u srcu ni sjena nisam
 
-Riječi mi više ništa ne znače
-sve si mi rekla bez ijedne riječi
-Korak po korak, krivi smjer
-a ja sam mislio vrijedi sve
+            Riječi mi više ništa ne znače
+            sve si mi rekla bez ijedne riječi
+            Korak po korak, krivi smjer
+            a ja sam mislio vrijedi sve
 
-Vidio sam, al priznao nisam
-Da ti u srcu ni sjena nisam.
-</p>
+            Vidio sam, al priznao nisam
+            Da ti u srcu ni sjena nisam.
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-11" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-plavi-vali" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-11')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Plavi vali</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Sve teške brige puštan moru plavom
-nek ih nose ovi blagi vali
-Sidin uz more, miran i slobodan
-dok me liti grije sunce o Jadrana
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Sve teške brige puštan moru plavom
+            nek ih nose ovi blagi vali
+            Sidin uz more, miran i slobodan
+            dok me liti grije sunce o Jadrana
 
-Pod sjenom masline tražim svoj mir
-di miris soli u dušu se plete
-A kad se sunce put zapada nagne
-čaša mi vina sve snove pokreće
+            Pod sjenom masline tražim svoj mir
+            di miris soli u dušu se plete
+            A kad se sunce put zapada nagne
+            čaša mi vina sve snove pokreće
 
-I nema tog dana što mir mi pokvari
-kad dušu obnove ove morske stvari
-U svakom valu snagu pronalazin
-s osmijehom sad ove staze prolazin
+            I nema tog dana što mir mi pokvari
+            kad dušu obnove ove morske stvari
+            U svakom valu snagu pronalazin
+            s osmijehom sad ove staze prolazin
 
-U konobi punoj smijeha i pisme
-nazdravin svima što život vole
-Malo nam triba, samo to more
-da lupi o kraj i izliči boli
+            U konobi punoj smijeha i pisme
+            nazdravin svima što život vole
+            Malo nam triba, samo to more
+            da lupi o kraj i izliči boli
 
-I nema tog dana što mir mi pokvari
-kad dušu obnove ove morske stvari
-U svakom valu snagu pronalazin
-s osmijehom sad ove staze prolazin
-</p>
+            I nema tog dana što mir mi pokvari
+            kad dušu obnove ove morske stvari
+            U svakom valu snagu pronalazin
+            s osmijehom sad ove staze prolazin
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-12" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-plave-oci" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-12')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Plave oči</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Kažem svima da sam dobro sad
-sjednem s ekipom nasmijem se na glas
-al čim noć padne sve me sustigne
-u tišini tvoje ime zovne me
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Kažem svima da sam dobro sad
+            sjednem s ekipom nasmijem se na glas
+            al čim noć padne sve me sustigne
+            u tišini tvoje ime zovne me
 
-Šetam sam kroz isti stari kraj
-kao da si još tu, pored mene znaj
-plava kosa na vjetru mi sja
-i opet si tu bar u mislima
+            Šetam sam kroz isti stari kraj
+            kao da si još tu, pored mene znaj
+            plava kosa na vjetru mi sja
+            i opet si tu bar u mislima
 
-Pokušavam pustit sve
-al ne ide to tek tak
+            Pokušavam pustit sve
+            al ne ide to tek tak
 
-Jer još te vidim plave oči u noći
-još mi stoji tvoje ime u samoći
-mislio sam proći će to do sad
-al nisam jak
-Kažem svima da sam krenuo dalje
-al svaka pjesma vrati me na stare dane
-koliko god da bježim od tog sna
-ti si tu i sad
+            Jer još te vidim plave oči u noći
+            još mi stoji tvoje ime u samoći
+            mislio sam proći će to do sad
+            al nisam jak
+            Kažem svima da sam krenuo dalje
+            al svaka pjesma vrati me na stare dane
+            koliko god da bježim od tog sna
+            ti si tu i sad
 
-Pokušao sam dalje neku drugu nać
-al nijedna nema taj tvoj sjaj
-svaki dodir nekako je stran
-kao da te tražim svaki dan
+            Pokušao sam dalje neku drugu nać
+            al nijedna nema taj tvoj sjaj
+            svaki dodir nekako je stran
+            kao da te tražim svaki dan
 
-Govore mi vrijeme liječi sve
-al meni stojiš još u svakoj sekundi
-znam da više nisi moja ti
-al ne ide mi
-Napravio sam korak dva
-al još sam na pola puta ja
+            Govore mi vrijeme liječi sve
+            al meni stojiš još u svakoj sekundi
+            znam da više nisi moja ti
+            al ne ide mi
+            Napravio sam korak dva
+            al još sam na pola puta ja
 
-Jer još te vidim, plave oči u noći
-još mi stoji tvoje ime u samoći
-mislio sam proći će to do sad
-al nisam jak
+            Jer još te vidim, plave oči u noći
+            još mi stoji tvoje ime u samoći
+            mislio sam proći će to do sad
+            al nisam jak
 
-Kažem svima da sam krenuo dalje
-al svaka pjesma vrati me na stare dane
-koliko god da bježim od tog sna
-ti si tu i sad
+            Kažem svima da sam krenuo dalje
+            al svaka pjesma vrati me na stare dane
+            koliko god da bježim od tog sna
+            ti si tu i sad
 
-Možda jednom pustit ću te skroz
-možda jednom prestat će taj glas
-al večeras još si dio mene
-i ne ide bez tebe
+            Možda jednom pustit ću te skroz
+            možda jednom prestat će taj glas
+            al večeras još si dio mene
+            i ne ide bez tebe
 
-Jer još te vidim plave oči u snu
-budim se, a nema te tu
-znam da moram dalje znam da znam
-al ne znam sam
+            Jer još te vidim plave oči u snu
+            budim se, a nema te tu
+            znam da moram dalje znam da znam
+            al ne znam sam
 
-Koliko god da vrijeme dalje ide
-neke stvari nikad ne izblijede
-možda sutra bit ću jače znam
-al ne još danas</p>
+            Koliko god da vrijeme dalje ide
+            neke stvari nikad ne izblijede
+            možda sutra bit ću jače znam
+            al ne još danas
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-13" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-nepozvan-gost" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-13')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Nepozvan gost</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Pamtim još one livade zelene
-i bistre rijeke što su nekad tekle
-Puteve uske, prašnjave i stare
-i sve one riječi što usne su rekle
-Još vidim oca pod starim krovom
-kako me čeka dok sunce se gasi
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Pamtim još one livade zelene
+            i bistre rijeke što su nekad tekle
+            Puteve uske, prašnjave i stare
+            i sve one riječi što usne su rekle
+            Još vidim oca pod starim krovom
+            kako me čeka dok sunce se gasi
 
-A starost dođe ko nepozvan gost
-da sruši u meni taj sjećanja most
-Pa prebiram dane ko staru gitaru
-tražim dječju dušu u ovom tijelu starom
-Sve prolazi tiho ko dima trag
-ostaje samo onaj očev prag.
+            A starost dođe ko nepozvan gost
+            da sruši u meni taj sjećanja most
+            Pa prebiram dane ko staru gitaru
+            tražim dječju dušu u ovom tijelu starom
+            Sve prolazi tiho ko dima trag
+            ostaje samo onaj očev prag.
 
-Zarasle su staze utihnula sela
-prošla su ljeta ko jesenja kiša
-Sada su samo sjećanja bijela
-i neka tuga od vjetra još tiša.
-Nema više onih dragih ljudi
-što su na pragu s osmijehom stali
+            Zarasle su staze utihnula sela
+            prošla su ljeta ko jesenja kiša
+            Sada su samo sjećanja bijela
+            i neka tuga od vjetra još tiša.
+            Nema više onih dragih ljudi
+            što su na pragu s osmijehom stali
 
-A starost dođe ko nepozvan gost
-da sruši u meni taj sjećanja most
-Pa prebiram dane ko staru gitaru
-tražim dječju dušu u ovom tijelu starom
+            A starost dođe ko nepozvan gost
+            da sruši u meni taj sjećanja most
+            Pa prebiram dane ko staru gitaru
+            tražim dječju dušu u ovom tijelu starom
 
-Onaj očev prag
-Moja dječja duša</p>
+            Onaj očev prag
+            Moja dječja duša
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-14" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-tuda-zemlja" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-14')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Tuđa zemlja</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Opet palim auto, a nebo se sivi
-Ostavljam prag na kojem se živi
-U retrovizoru majka mi maše
-suze joj padaju na ruke naše
-Puna je torba hrane domaće
-Al srce se steže, tuga me lomi
-dok me ovaj put od moga doma goni
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Opet palim auto, a nebo se sivi
+            Ostavljam prag na kojem se živi
+            U retrovizoru majka mi maše
+            suze joj padaju na ruke naše
+            Puna je torba hrane domaće
+            Al srce se steže, tuga me lomi
+            dok me ovaj put od moga doma goni
 
-Autoput dug ko godine teške
-prošao bih ga sutra da mogu i pješke
-Samo da ostanem gdje su moji stari
-gdje se za sreću ne pitaju dolari
-Ovdje su zgrade od stakla i leda
-nitko te toplo u oči ne gleda
+            Autoput dug ko godine teške
+            prošao bih ga sutra da mogu i pješke
+            Samo da ostanem gdje su moji stari
+            gdje se za sreću ne pitaju dolari
+            Ovdje su zgrade od stakla i leda
+            nitko te toplo u oči ne gleda
 
-Tuđa je zemlja ko maćeha hladna
-tijelo je sito, al duša je gladna
-Brojim te dane ko puste stanice
-prodadoh mladost za puste granice
+            Tuđa je zemlja ko maćeha hladna
+            tijelo je sito, al duša je gladna
+            Brojim te dane ko puste stanice
+            prodadoh mladost za puste granice
 
-Autoput dug ko godine teške
-prošao bih ga sutra da mogu i pješke
-Samo da ostanem gdje su moji stari
-gdje se za sreću ne pitaju dolari
-Ovdje su zgrade od stakla i leda
-nitko te toplo u oči ne gleda
+            Autoput dug ko godine teške
+            prošao bih ga sutra da mogu i pješke
+            Samo da ostanem gdje su moji stari
+            gdje se za sreću ne pitaju dolari
+            Ovdje su zgrade od stakla i leda
+            nitko te toplo u oči ne gleda
 
-Radim od zore ne pitam za sate
-da djeca mi kući za ničim ne pate
-Al kad me noću tišina savlada
-Vratio bih se istog dana
-tamo gdje još živi moja volja stara
+            Radim od zore ne pitam za sate
+            da djeca mi kući za ničim ne pate
+            Al kad me noću tišina savlada
+            Vratio bih se istog dana
+            tamo gdje još živi moja volja stara
 
-Vratit ću se jednog dana
-Tamo gdje su moje stope sitne
-Samo je jedan dom
-</p>
+            Vratit ću se jednog dana
+            Tamo gdje su moje stope sitne
+            Samo je jedan dom
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-15" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-pusti-buru" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-15')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Pusti buru</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Pusti buru neka noćas spava.
-Iznad krova starog iznad naših glava.
-Zatvori škure da ne čujem grad,
-Samo tvoj tihi dah mi triba sad.
-Opet je vrime od soli i vina
-U tvojim očima je moja dubina.
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Pusti buru neka noćas spava.
+            Iznad krova starog iznad naših glava.
+            Zatvori škure da ne čujem grad,
+            Samo tvoj tihi dah mi triba sad.
+            Opet je vrime od soli i vina
+            U tvojim očima je moja dubina.
 
-Nisi ti samo lipota od dana
-Ti si mi srića moja luka i grana
-Sve ove godine ča su prošle kroz nas
-Samo su tražile u ljubavi spas
-I kad me ne bude, i kad prođe sve
-Moje će srce još kucat za te
+            Nisi ti samo lipota od dana
+            Ti si mi srića moja luka i grana
+            Sve ove godine ča su prošle kroz nas
+            Samo su tražile u ljubavi spas
+            I kad me ne bude, i kad prođe sve
+            Moje će srce još kucat za te
 
-Dalmacija u tebi Dalmacija u meni
-Ka staro vino ča u krvi se pini
-Da me sritnog vežu uz tvoje ime
-Pa neka me lome sve ove zime
-Ti si mi sunce ča na zapadu sja
-Moja si prva i zadnja, jedina
+            Dalmacija u tebi Dalmacija u meni
+            Ka staro vino ča u krvi se pini
+            Da me sritnog vežu uz tvoje ime
+            Pa neka me lome sve ove zime
+            Ti si mi sunce ča na zapadu sja
+            Moja si prva i zadnja, jedina
 
-I da se opet rodim, istim bi puten poša
-U tvoj bi zagrljaj ka brod u luku doša
+            I da se opet rodim, istim bi puten poša
+            U tvoj bi zagrljaj ka brod u luku doša
 
-Dalmacija u tebi Dalmacija u meni
-Ka staro vino ča u krvi se pini
-Da me sritnog vežu uz tvoje ime
-Pa neka me lome sve ove zime
+            Dalmacija u tebi Dalmacija u meni
+            Ka staro vino ča u krvi se pini
+            Da me sritnog vežu uz tvoje ime
+            Pa neka me lome sve ove zime
 
-Moja si prva i zadnja, jedina
-Jedina moja Dalmacija
-</p>
+            Moja si prva i zadnja, jedina
+            Jedina moja Dalmacija
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-16" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-konoba-ceka" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-16')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Konoba čeka</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Opet sunce grije, gori svaki kamen
-u srcu mi vatra u duši mi plamen
-Obuka san bilu košulju na pruge
-danas neću brige danas neću tuge
-Cili grad se smije, procvitala luka
-a mene u konobi čeka dobra ruka
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Opet sunce grije, gori svaki kamen
+            u srcu mi vatra u duši mi plamen
+            Obuka san bilu košulju na pruge
+            danas neću brige danas neću tuge
+            Cili grad se smije, procvitala luka
+            a mene u konobi čeka dobra ruka
 
+            Zaveza san barku nek je more ljulja
+            skinija san s leđa i zadnjega žulja
+            Sad mi triba pisma i klapa stara
+            da mi se u srce vrati srića stara
+            Nek se toči vino nek se vrti riba
+            ništa mi na svitu više ne triba.
 
-Zaveza san barku nek je more ljulja
-skinija san s leđa i zadnjega žulja
-Sad mi triba pisma i klapa stara
-da mi se u srce vrati srića stara
-Nek se toči vino nek se vrti riba
-ništa mi na svitu više ne triba.
+            Malo mi triba samo kaplja mora
+            jedna lipa rič i rane zore zora
+            Riva, sunce i ladna bevanda
+            nek nam cilu noć svira ona banda
+            Digni čašu nek se pismom lije
+            nikom ko u Dalmaciji lipo nije
 
-
-Malo mi triba samo kaplja mora
-jedna lipa rič i rane zore zora
-Riva, sunce i ladna bevanda
-nek nam cilu noć svira ona banda
-Digni čašu nek se pismom lije
-nikom ko u Dalmaciji lipo nije
-
-Nek' se pismom lije
-Ništa lipše nije
-Moja Dalmacija
-</p>
+            Nek' se pismom lije
+            Ništa lipše nije
+            Moja Dalmacija
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-17" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-veceras-sam-gazda" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-17')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Večeras sam gazda</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Palim grad oblačim najbolje
-večeras srce ne traži nevolje
-Dosta je bilo tuge i čekanja
-sad je na redu noć bez kukanja
-Čujem taj ritam krv mi proključa
-nema me doma ja sam kod kuće u klubu
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Palim grad oblačim najbolje
+            večeras srce ne traži nevolje
+            Dosta je bilo tuge i čekanja
+            sad je na redu noć bez kukanja
+            Čujem taj ritam krv mi proključa
+            nema me doma ja sam kod kuće u klubu
 
-Svi mi se dive, a ja se ne okrećem
-večeras samo sa srećom polijećem.
-Bivše i tužne u prošlosti ostavljam
-ja se sa životom napokon pozdravljam uz osmijeh
-Nek gori krug nek puca dvorana
-večeras sam kralj svih kafana
+            Svi mi se dive, a ja se ne okrećem
+            večeras samo sa srećom polijećem.
+            Bivše i tužne u prošlosti ostavljam
+            ja se sa životom napokon pozdravljam uz osmijeh
+            Nek gori krug nek puca dvorana
+            večeras sam kralj svih kafana
 
-Ma nek se toči nek se pije
-tko preživi nek se smije
-Ovo je moja noć, moja pobjeda,
-više u meni nema ni kapi leda
+            Ma nek se toči nek se pije
+            tko preživi nek se smije
+            Ovo je moja noć, moja pobjeda,
+            više u meni nema ni kapi leda
 
-Daj mi tu pjesmu što me podiže
-zora je blizu, a kraj se ne vidi
-Ja sam od onih što znaju da žive
-nek mi se sutra svi redom dive
+            Daj mi tu pjesmu što me podiže
+            zora je blizu, a kraj se ne vidi
+            Ja sam od onih što znaju da žive
+            nek mi se sutra svi redom dive
 
-Gledajte dobro jer ja se ne vraćam
-svaku sam grešku pošteno ja plaćam
-Sad sam slobodan jači nego ikada
-neću za starim žaliti nikada
+            Gledajte dobro jer ja se ne vraćam
+            svaku sam grešku pošteno ja plaćam
+            Sad sam slobodan jači nego ikada
+            neću za starim žaliti nikada
 
-Večeras sam gazda
-Samo nek se pije
-To je moj život
-</p>
+            Večeras sam gazda
+            Samo nek se pije
+            To je moj život
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-18" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-slavonac-moj-mali" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-18')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Slavonac moj mali</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Slatke brige i izazovi od danas dolaze
-sve najveće želje tiho prolaze
-Moja želja četrdeset godina bio si ti
-u mom srcu zauvijek ćeš blistati
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Slatke brige i izazovi od danas dolaze
+            sve najveće želje tiho prolaze
+            Moja želja četrdeset godina bio si ti
+            u mom srcu zauvijek ćeš blistati
 
-Slavonac moj mali
-sunce moje drago
-ti si moje najveće blago
+            Slavonac moj mali
+            sunce moje drago
+            ti si moje najveće blago
 
-Sva zelena polja neka tvoje ime znaju
-i čuvaju osmijeh u tvom zavičaju
-Mirno spavaj milo moje dok te majka pazi
-neka sreća pored tebe ne prolazi
+            Sva zelena polja neka tvoje ime znaju
+            i čuvaju osmijeh u tvom zavičaju
+            Mirno spavaj milo moje dok te majka pazi
+            neka sreća pored tebe ne prolazi
 
-Slavonac moj mali
-sunce moje drago
-ti si moje najveće blago
+            Slavonac moj mali
+            sunce moje drago
+            ti si moje najveće blago
 
-Ti si moje blago (najveće blago)
-Moje blago
-</p>
+            Ti si moje blago (najveće blago)
+            Moje blago
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-19" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-koliko-ovo-traje" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-19')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Koliko ovo traje</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Tugo moja koliko ovo traje
-i za koliko reci prestaje
-Kroz cijeli život idem i vjerujem ljudima
-al ostala je samo studen u grudima
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Tugo moja koliko ovo traje
+            i za koliko reci prestaje
+            Kroz cijeli život idem i vjerujem ljudima
+            al ostala je samo studen u grudima
 
-Al koliko god me ove tuge lome
-neće da me slome neće da me sklone
-Još u meni vatre ima još mi srce bije
-nikada me nitko pokorio nije
+            Al koliko god me ove tuge lome
+            neće da me slome neće da me sklone
+            Još u meni vatre ima još mi srce bije
+            nikada me nitko pokorio nije
 
-Vjerovala sam svima srce na dlanu dala
-al mnoga od tih lica bila su mi lažna i mala
-Nisu pazili na mene nisu znali da me cijene
-dok su vjetrovi života šibali kroz mene
+            Vjerovala sam svima srce na dlanu dala
+            al mnoga od tih lica bila su mi lažna i mala
+            Nisu pazili na mene nisu znali da me cijene
+            dok su vjetrovi života šibali kroz mene
 
-Al koliko god me ove tuge lome,
-neće da me slome neće da me sklone
-Još u meni vatre ima još mi srce bije
-nikada me nitko pokorio nije.
-</p>
+            Al koliko god me ove tuge lome,
+            neće da me slome neće da me sklone
+            Još u meni vatre ima još mi srce bije
+            nikada me nitko pokorio nije.
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-20" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-pokazi-mi-trag" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-20')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Pokaži mi trag</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">More moje plavo melem si za oči
-uz tebe su uvik lipe i noći
-Dok lavanda miriši i vino se toči
-teško će san na oči doći
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            More moje plavo melem si za oči
+            uz tebe su uvik lipe i noći
+            Dok lavanda miriši i vino se toči
+            teško će san na oči doći
 
-Slušam šapate u kasne sate
-al misli se opet na nju vrate
-Dok misec sija i more spava
-pitam se postoji li ona prava.
+            Slušam šapate u kasne sate
+            al misli se opet na nju vrate
+            Dok misec sija i more spava
+            pitam se postoji li ona prava.
 
-More moje plavo kaži mi ti
-gdje si je sakrija i postoji li
-Pokaži mi trag bar jedan znak mi daj
-prije nego svanu zore i ovoj priči dođe kraj.
+            More moje plavo kaži mi ti
+            gdje si je sakrija i postoji li
+            Pokaži mi trag bar jedan znak mi daj
+            prije nego svanu zore i ovoj priči dođe kraj.
 
-More moje plavo kaži mi ti
-gdje si je sakrija i postoji li
-Pokaži mi trag bar jedan znak mi daj
-prije nego svanu zore i ovoj priči dođe kraj.</p>
+            More moje plavo kaži mi ti
+            gdje si je sakrija i postoji li
+            Pokaži mi trag bar jedan znak mi daj
+            prije nego svanu zore i ovoj priči dođe kraj.
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-21" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-jos-te-u-meni-previse-ima" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-21')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Još te u meni previše ima</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Prolazin ulicom di si me čekala
-svaka me ploča na tebe podsiti
-Ista je ura, ista je vala
-al tebe nigdi ne mogu viditi
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Prolazin ulicom di si me čekala
+            svaka me ploča na tebe podsiti
+            Ista je ura, ista je vala
+            al tebe nigdi ne mogu viditi
 
-Gledan u ekran, tvoj broj me mami
-da samo ti čujen bar na tren glas
-Al prsti se zalede, ostajemo sami
-u ovom mraku više nema nas
+            Gledan u ekran, tvoj broj me mami
+            da samo ti čujen bar na tren glas
+            Al prsti se zalede, ostajemo sami
+            u ovom mraku više nema nas
 
-I puca mi srce na svaka dva dila
-dok tražim te tamo di nikad nisi bila
-U kapi kiše, u mirisu dima
-još te u meni previše ima
-Oprosti mi dušo, što ne znam te pustit
-i ove riči što ne smijem izustit
+            I puca mi srce na svaka dva dila
+            dok tražim te tamo di nikad nisi bila
+            U kapi kiše, u mirisu dima
+            još te u meni previše ima
+            Oprosti mi dušo, što ne znam te pustit
+            i ove riči što ne smijem izustit
 
-Sritnemo se nekad, prođemo bez riči
-ka da smo stranci što se ne znaju
-Osmijeh je tvoj sad u nekoj drugoj priči
-a moje rane niko ne liči
+            Sritnemo se nekad, prođemo bez riči
+            ka da smo stranci što se ne znaju
+            Osmijeh je tvoj sad u nekoj drugoj priči
+            a moje rane niko ne liči
 
-I puca mi srce na svaka dva dila
-dok tražim te tamo di nikad nisi bila.
-U kapi kiše u mirisu dima
-još te u meni previše ima
-Samo stranac
-U tvojim očima
-Ostala je bol
-</p>
+            I puca mi srce na svaka dva dila
+            dok tražim te tamo di nikad nisi bila.
+            U kapi kiše u mirisu dima
+            još te u meni previše ima
+            Samo stranac
+            U tvojim očima
+            Ostala je bol
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-22" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-metropola" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-22')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Metropola</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Volimo mi iz provincije u metropolu doći
-vidjeti svjetla što sjaje u noći
-Prošetati Zrinjevcem u parku ležati
-od onih briga bar na malo bježati
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Volimo mi iz provincije u metropolu doći
+            vidjeti svjetla što sjaje u noći
+            Prošetati Zrinjevcem u parku ležati
+            od onih briga bar na malo bježati
 
-I nije važno odakle smo, dok srce se smije
-metropola nas danas ko sunce grije
+            I nije važno odakle smo, dok srce se smije
+            metropola nas danas ko sunce grije
 
-Malo do Nocturna tamo nema što nema
-najbolja hrana i najbolja tema
-A poslije onog oranža od lješnjaka bolje nema
-svaki taj zalogaj najbolja je šema
+            Malo do Nocturna tamo nema što nema
+            najbolja hrana i najbolja tema
+            A poslije onog oranža od lješnjaka bolje nema
+            svaki taj zalogaj najbolja je šema
 
-Kavica uz fontanu dok grad ubrzano diše
-neka se ova sreća u sjećanje upiše
-I nije važno odakle smo dok srce se smije
-metropola nas danas ko sunce grije
-Pa lagano doma dok se svjetla pale
-dok misli su sretne i u provinciju nas vrate
+            Kavica uz fontanu dok grad ubrzano diše
+            neka se ova sreća u sjećanje upiše
+            I nije važno odakle smo dok srce se smije
+            metropola nas danas ko sunce grije
+            Pa lagano doma dok se svjetla pale
+            dok misli su sretne i u provinciju nas vrate
 
-Pozdravljam Manduševac i stare ulice
-ostavljam osmjeh za baš svako lice
-Puni smo priča puni smo snova
-svaka je šetnja ko pobjeda nova</p>
+            Pozdravljam Manduševac i stare ulice
+            ostavljam osmjeh za baš svako lice
+            Puni smo priča puni smo snova
+            svaka je šetnja ko pobjeda nova
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-23" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    
+<div id="modal-junak-u-tudjim-ocima" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-23')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Junak u tuđim očima</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Često si heroj bez ijedne mane
-pomažeš svima liječiš tuđe rane
-Četrdeset godina slušam te priče
-ali meni one na ništa ne liče
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Često si heroj bez ijedne mane
+            pomažeš svima liječiš tuđe rane
+            Četrdeset godina slušam te priče
+            ali meni one na ništa ne liče
 
-Junak u tuđim očima
-ljudima onima što te ne znaju
-Gradiš mostove samo kad tebi trebaju
-Vratiš se na dan pa na godine odeš
+            Junak u tuđim očima
+            ljudima onima što te ne znaju
+            Gradiš mostove samo kad tebi trebaju
+            Vratiš se na dan pa na godine odeš
 
-Prošetaš kao gost kad zatreba ti luka
-pa opet nestaneš bez ikakvog zvuka
-Nema te godinama, ko da me i nije
-dok u kafani slava tebe grije
+            Prošetaš kao gost kad zatreba ti luka
+            pa opet nestaneš bez ikakvog zvuka
+            Nema te godinama, ko da me i nije
+            dok u kafani slava tebe grije
 
-Junak u tuđim očima
-ljudima onima što te ne znaju
-Gradiš mostove samo kad tebi trebaju
-Vratiš se na dan pa na godine odeš
+            Junak u tuđim očima
+            ljudima onima što te ne znaju
+            Gradiš mostove samo kad tebi trebaju
+            Vratiš se na dan pa na godine odeš
 
-Nema te godinama
-ko da me i nije
-</p>
+            Nema te godinama
+            ko da me i nije
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-24" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-nisan-te-trazija" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-24')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Nisan te tražija</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Nisan te tražija, al si se dogodila
-ka svjetlo što je kroz maglu probila
-Samo si prošla niz ulice sive
-dok u meni bude se sjene žive
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Nisan te tražija, al si se dogodila
+            ka svjetlo što je kroz maglu probila
+            Samo si prošla niz ulice sive
+            dok u meni bude se sjene žive
 
-Zastala je ura grad je osta bez glasa
-dok si rukom kosu makla s lica
-Ka da je nebo u taj čas odlučilo
-sve moje mrakove sobom je izličilo
+            Zastala je ura grad je osta bez glasa
+            dok si rukom kosu makla s lica
+            Ka da je nebo u taj čas odlučilo
+            sve moje mrakove sobom je izličilo
 
-A taj tvoj osmijeh taj blagi dar
-zapali u meni neki stari žar
-U njemu vidin mir u njemu vidin spas
-u tišini grada ja čujen tvoj glas
-Samo taj osmijeh, od sunca čist
-okrija je u meni novi bili list
+            A taj tvoj osmijeh taj blagi dar
+            zapali u meni neki stari žar
+            U njemu vidin mir u njemu vidin spas
+            u tišini grada ja čujen tvoj glas
+            Samo taj osmijeh, od sunca čist
+            okrija je u meni novi bili list
 
-I neki čudan osjećaj me dira
-što san ga davno u sebi skrija
-Nosi me tamo di san nekad sta
-prije nego san se pridat zna
+            I neki čudan osjećaj me dira
+            što san ga davno u sebi skrija
+            Nosi me tamo di san nekad sta
+            prije nego san se pridat zna
 
-
-A taj tvoj osmijeh taj blagi dar
-zapali u meni neki stari žar
-U njemu vidin mir u njemu vidin spas
-u tišini grada ja čujen tvoj glas
-</p>
+            A taj tvoj osmijeh taj blagi dar
+            zapali u meni neki stari žar
+            U njemu vidin mir u njemu vidin spas
+            u tišini grada ja čujen tvoj glas
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-25" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-za-dvoje-sam-volio" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-25')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Za dvoje sam volio</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Pustila si da sve ode, da nestane ono naše
-okrenula si leđa lako ko da uspomene ne postoje
-Uzalud priče o sudbini i nekom krivom vremenu
-da si se samo malo borila ne bi sve nestalo u trenu
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Pustila si da sve ode, da nestane ono naše
+            okrenula si leđa lako ko da uspomene ne postoje
+            Uzalud priče o sudbini i nekom krivom vremenu
+            da si se samo malo borila ne bi sve nestalo u trenu
 
-Za dvoje sam volio, za dvoje se molio
-u ovoj vatri ja sam za oboje izgorio
-Sve sam radio sebe sam gazio
-ništa nisam pazio, a sada ne znam kako tu bol nositi sam
-Za dvoje sam volio za dvoje se nadao
-sad ovu tugu nosim sam jer sam za nas stradao
+            Za dvoje sam volio, za dvoje se molio
+            u ovoj vatri ja sam za oboje izgorio
+            Sve sam radio sebe sam gazio
+            ništa nisam pazio, a sada ne znam kako tu bol nositi sam
+            Za dvoje sam volio za dvoje se nadao
+            sad ovu tugu nosim sam jer sam za nas stradao
 
-Sve što sada nudiš, samo su hladne riječi
-ko da to može srce izliječiti
-Rekla si da ne možeš da je život takva škola
-a ostavila si mene da sam vučem teret bola
+            Sve što sada nudiš, samo su hladne riječi
+            ko da to može srce izliječiti
+            Rekla si da ne možeš da je život takva škola
+            a ostavila si mene da sam vučem teret bola
 
-Za dvoje sam volio za dvoje se molio
-u ovoj vatri ja sam za oboje izgorio
-Za dvoje sam volio za dvoje se nadao
-sad ovu tugu nosim sam jer sam za nas stradao.
+            Za dvoje sam volio za dvoje se molio
+            u ovoj vatri ja sam za oboje izgorio
+            Za dvoje sam volio za dvoje se nadao
+            sad ovu tugu nosim sam jer sam za nas stradao.
 
-Za dvoje sam volio, za dvoje se molio
-</p>
+            Za dvoje sam volio, za dvoje se molio
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-26" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-ti-sve-to-baci" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-26')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Ti sve to baci</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Ako možeš ti zaboravi
-Sve što je bilo u ono vrijeme
-Ako hoćeš ti točku stavi
-Ja neću nosit ću svoje breme
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Ako možeš ti zaboravi
+            Sve što je bilo u ono vrijeme
+            Ako hoćeš ti točku stavi
+            Ja neću nosit ću svoje breme
 
-Ako možeš ti sve moje ubij
-Neću se ljutiti kunem se Bogom
-Jer ja ću uvijek u sebi te čuvat
-I nikada tebi neću reći zbogom
+            Ako možeš ti sve moje ubij
+            Neću se ljutiti kunem se Bogom
+            Jer ja ću uvijek u sebi te čuvat
+            I nikada tebi neću reći zbogom
 
-Ako možeš ti sve to baci
-U mutne rijeke neka sve nose
-A mene neka prate oblaci
-I vjetar što mrsi mi umorne kose
+            Ako možeš ti sve to baci
+            U mutne rijeke neka sve nose
+            A mene neka prate oblaci
+            I vjetar što mrsi mi umorne kose
 
-Ako možeš ti vrata zatvori
-Odbaci prošlost ko staro ćebe
-I sve što ja jesam crvenim prekriži
-Al ja neću nikad zaboravit tebe
+            Ako možeš ti vrata zatvori
+            Odbaci prošlost ko staro ćebe
+            I sve što ja jesam crvenim prekriži
+            Al ja neću nikad zaboravit tebe
 
-Ako možeš ti sve to baci
-U mutne rijeke neka sve nose
-A mene neka prate oblaci
-I vjetar što mrsi mi umorne kose
-Ti sve to baci, nek rijeke sve to nose
-Ti sve to baci
- Nek nose...
-</p>
+            Ako možeš ti sve to baci
+            U mutne rijeke neka sve nose
+            A mene neka prate oblaci
+            I vjetar što mrsi mi umorne kose
+            Ti sve to baci, nek rijeke sve to nose
+            Ti sve to baci
+            Nek nose...
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-27" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-art-zadar" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-27')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Art Zadar</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Kadgod moreš dođi
-Skreni tamo gdi je zalazak sunca najlipši
-Tamo gdi u ritmu bura živi
-Gdi te srce uvik zove
-I gdi duša lako plovi
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Kadgod moreš dođi
+            Skreni tamo gdi je zalazak sunca najlipši
+            Tamo gdi u ritmu bura živi
+            Gdi te srce uvik zove
+            I gdi duša lako plovi
 
+            U Zadru je pisma u Zadru je lipota
+            Svako lito novo poglavlje života
+            Nek melodija svira i nek nas nosi
+            Ti u Art Zadar skreni i umjetnost u sebi pokreni
 
-U Zadru je pisma u Zadru je lipota
-Svako lito novo poglavlje života
-Nek melodija svira i nek nas nosi
-Ti u Art Zadar skreni i umjetnost u sebi pokreni
+            U grad gdi se osmih na licu nosi
+            Uvik vas čekam dobre volje
+            Gdi bura s mora tugu odnosi
+            I svako sutra izgleda bolje
 
-U grad gdi se osmih na licu nosi
-Uvik vas čekam dobre volje
-Gdi bura s mora tugu odnosi
-I svako sutra izgleda bolje
+            Kadgod moreš dođi
+            Tamo di te srce zove uvik skreni
+            Di plavo more oči ti odmori
+            I tvoja duša lakše plovi.
 
-Kadgod moreš dođi
-Tamo di te srce zove uvik skreni
-Di plavo more oči ti odmori
-I tvoja duša lakše plovi.
+            Čekam Vas uvik dobre volje
+            Kadgod moreš dođi
 
-Čekam Vas uvik dobre volje
-Kadgod moreš dođi
-
-Art Zadar uvik tu za vas
-Art Zadar
-</p>
+            Art Zadar uvik tu za vas
+            Art Zadar
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-28" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-covjek-koji-me-iznevjerio" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-28')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Čovjek koji me iznevjerio</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Ni sam ne znam zašto te još volim
-i koliko treba vremena da prebolim.
-Boli srce boli ova moja duša
-nemam nikog više da me sluša
-Još te tražim još te čekam
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Ni sam ne znam zašto te još volim
+            i koliko treba vremena da prebolim.
+            Boli srce boli ova moja duša
+            nemam nikog više da me sluša
+            Još te tražim još te čekam
 
-Ja sam čovjek koji me najviše iznevjerio
-Jer sam tebi više nego sebi vjerovao
-Otišla si al me nikad ne zaboravi
-nitko te ko ja neće voljeti.
-Sutra kad me ne bude hoćeš li pitati
-kad moja duša ode hoćeš li plakati
+            Ja sam čovjek koji me najviše iznevjerio
+            Jer sam tebi više nego sebi vjerovao
+            Otišla si al me nikad ne zaboravi
+            nitko te ko ja neće voljeti.
+            Sutra kad me ne bude hoćeš li pitati
+            kad moja duša ode hoćeš li plakati
 
+            Ništa više ne vrijedi kad me ne zoveš
+            i ne pitaš za mene ko da ne postojim
+            Svako moje sutra teže je od jučer
+            dok mi stara tuga na prozore tuče
+            Kad ostarim hoću li još na tebe misliti
+            a ti hoćeš li se ikad mene sjetiti
 
-Ništa više ne vrijedi kad me ne zoveš
-i ne pitaš za mene ko da ne postojim
-Svako moje sutra teže je od jučer
-dok mi stara tuga na prozore tuče
-Kad ostarim hoću li još na tebe misliti
-a ti hoćeš li se ikad mene sjetiti
+            Ja sam čovjek koji me najviše iznevjerio
+            Jer sam tebi više nego sebi vjerovao
+            Otišla si al me nikad ne zaboravi
+            nitko te ko ja neće voljeti.
+            Sutra kad me ne bude hoćeš li pitati
+            kad moja duša ode hoćeš li plakati
 
-Ja sam čovjek koji me najviše iznevjerio
-Jer sam tebi više nego sebi vjerovao
-Otišla si al me nikad ne zaboravi
-nitko te ko ja neće voljeti.
-Sutra kad me ne bude hoćeš li pitati
-kad moja duša ode hoćeš li plakati
+            Ja sam čovjek koji me najviše iznevjerio
+            Jer sam tebi više nego sebi vjerovao
+            Otišla si al me nikad ne zaboravi
+            nitko te ko ja neće voljeti.
+            Sutra kad me ne bude hoćeš li pitati
+            kad moja duša ode hoćeš li plakati
 
-Ja sam čovjek koji me najviše iznevjerio
-Jer sam tebi više nego sebi vjerovao
-Otišla si al me nikad ne zaboravi
-nitko te ko ja neće voljeti.
-Sutra kad me ne bude hoćeš li pitati
-kad moja duša ode hoćeš li plakati
-
-Ja sam čovjek Koji me iznevjerio</p>
+            Ja sam čovjek Koji me iznevjerio
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-29" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+<div id="modal-tko-je-pobijedio" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-29')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Tko je pobijedio</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Brojim besmislene sate dane
-Nakon što otišla si putem kojim samo ti znaš zašto
-Pitam se što te nema zar se nikad ne sjetiš
-Da se samo za tebe molim dok tišina dušu lomi
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Brojim besmislene sate dane
+            Nakon što otišla si putem kojim samo ti znaš zašto
+            Pitam se što te nema zar se nikad ne sjetiš
+            Da se samo za tebe molim dok tišina dušu lomi
 
-Svaki korak bez tebe je težak
-Ne da nije lako, nego uopće ne znam kako
-Umoran sam hej živote
-Osmijeh za druge nosim, a bol teško podnosim
+            Svaki korak bez tebe je težak
+            Ne da nije lako, nego uopće ne znam kako
+            Umoran sam hej živote
+            Osmijeh za druge nosim, a bol teško podnosim
 
-Tko je pobijedio na kraju pitaju ljudi
-Ja im kažem u ovoj igri pobjednika nema
-A gubitnik je onaj koji voli
-Rastanak jednom uvijek tužnu priču piše
-Jer onaj tko odlazi ne okreće se više
+            Tko je pobijedio na kraju pitaju ljudi
+            Ja im kažem u ovoj igri pobjednika nema
+            A gubitnik je onaj koji voli
+            Rastanak jednom uvijek tužnu priču piše
+            Jer onaj tko odlazi ne okreće se više
 
-Izgubljeno vrijeme izgubljen i ja
-Lutam gdje god krenem bez cilja i sna
-Često mi prođe misao u kojoj se pitam
-Gdje je smisao života dok u mraku skitam
+            Izgubljeno vrijeme izgubljen i ja
+            Lutam gdje god krenem bez cilja i sna
+            Često mi prođe misao u kojoj se pitam
+            Gdje je smisao života dok u mraku skitam
 
-Tko je pobijedio na kraju pitaju ljudi
-Ja im kažem u ovoj igri pobjednika nema
-A gubitnik je onaj koji voli
-Rastanak jednom uvijek tužnu priču piše
-Jer onaj tko odlazi ne okreće se više
-</p>
+            Tko je pobijedio na kraju pitaju ljudi
+            Ja im kažem u ovoj igri pobjednika nema
+            A gubitnik je onaj koji voli
+            Rastanak jednom uvijek tužnu priču piše
+            Jer onaj tko odlazi ne okreće se više
+        </p>
     </div>
 </div>
 
-<div id="modal-pjesma-30" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="modal-dobra-formula" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
     <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
-        <button onclick="zatvoriTekst('pjesma-30')" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
         <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Dobra formula</h3>
-        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">Dok bacamo brige i skačemo u more
-Sunce nas peče vidim ovo bit će najbolje veče
-Sunce, more, ti i ja
-Izgleda baš dobra formula
-Nek nam gitara dugo svira
-I nek ritam dobar drži
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Dok bacamo brige i skačemo u more
+            Sunce nas peče vidim ovo bit će najbolje veče
+            Sunce, more, ti i ja
+            Izgleda baš dobra formula
+            Nek nam gitara dugo svira
+            I nek ritam dobar drži
 
-[Verse 2]
-Džepovi nam prazni al su srca puna
-Nek svi su ovdje i nitko ne fali
-Najveći smo kad smo mali
-Džepovi nam prazni al su srca puna
-Nek svi su ovdje i nitko ne fali
-Najveći smo kad smo mali
+            Džepovi nam prazni al su srca puna
+            Nek svi su ovdje i nitko ne fali
+            Najveći smo kad smo mali
+            Džepovi nam prazni al su srca puna
+            Nek svi su ovdje i nitko ne fali
+            Najveći smo kad smo mali
 
-Samo pleši ako treba lomi i čaše
-Ovo ljeto bit će samo naše
-Samo pleši ako treba lomi i čaše
-Ovo ljeto bit će samo naše
+            Samo pleši ako treba lomi i čaše
+            Ovo ljeto bit će samo naše
+            Samo pleši ako treba lomi i čaše
+            Ovo ljeto bit će samo naše
 
-Dok bacamo brige i skačemo u more
-Sunce nas peče vidim ovo bit će najbolje veče
-Sunce, more, ti i ja
-Izgleda baš dobra formula
-Nek nam gitara dugo svira
-I nek ritam dobar drži
+            Dok bacamo brige i skačemo u more
+            Sunce nas peče vidim ovo bit će najbolje veče
+            Sunce, more, ti i ja
+            Izgleda baš dobra formula
+            Nek nam gitara dugo svira
+            I nek ritam dobar drži
 
-Samo pleši ako treba lomi i čaše
-Ovo ljeto bit će samo naše
-Samo pleši ako treba lomi i čaše
-Ovo ljeto bit će samo naše!
+            Samo pleši ako treba lomi i čaše
+            Ovo ljeto bit će samo naše
+            Samo pleši ako treba lomi i čaše
+            Ovo ljeto bit će samo naše!
 
-Ovo ljeto samo naše
-</p>
+            Ovo ljeto samo naše
+        </p>
     </div>
 </div>
 </section>
