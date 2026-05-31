@@ -1879,16 +1879,22 @@ dok mi život bez tvog svitla prolazi
 </script>
 
     <script>
-function otvoriTekst(button) {
-    const targetId = button.getAttribute('data-target');
-    document.getElementById(targetId).classList.remove('hidden');
-    document.getElementById(targetId).classList.add('flex');
+function otvoriTekst(btn) {
+    const targetId = btn.getAttribute('data-target');
+    const modal = document.getElementById(targetId);
+    if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
 }
 
-function zatvoriTekst(button) {
-    const modal = button.closest('.fixed');
-    modal.classList.add('hidden');
-    modal.classList.remove('flex');
+function zatvoriTekst(btn) {
+    // Pronalazi roditeljski modal od dugmeta koje je kliknuto
+    const modal = btn.closest('.fixed');
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
 }
 </script>
     
