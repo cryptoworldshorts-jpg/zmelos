@@ -156,48 +156,50 @@
     <h2 class="text-2xl md:text-3xl font-pisana neon-text mb-6 border-l-4 border-blue-500 pl-4">Novi Video</h2>
     
     <div class="glass p-2 rounded-xl neon-border shadow-2xl shadow-blue-500/10">
-        <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/wZYE009wIOo" frameborder="0" allowfullscreen></iframe>
+        <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/0bZRmJI5UMk" frameborder="0" allowfullscreen></iframe>
         
         <div class="mt-3 flex justify-between items-center px-2 pb-1">
-            <span class="text-sm font-semibold text-gray-300">Korzo i tišina</span>
-            <!-- Ovdje je ključ: data-target="korzo-i-kisa" -->
-            <button onclick="otvoriTekst(this)" data-target="korzo-i-kisa" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">
+            <span class="text-sm font-semibold text-gray-300">Ja i moj kolega</span>
+            <!-- Ovdje je ključ: data-target="ja-i-moj-kolega" -->
+            <button onclick="otvoriTekst(this)" data-target="ja-i-moj-kolega" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">
                 Tekst Pjesme
             </button>
         </div>
     </div>
 
     <!-- Ovdje je ključ: id="izaci-cu-jaci" (identično kao gore) -->
-    <div id="korzo-i-kisa" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div id="ja-i-moj-kolega" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
         <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto animate-fade-in">
             <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
             
-            <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Korzo i tišina</h3>
+            <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Ja i moj kolega</h3>
             
             <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
-                Sjetiš li se sjetiš li se nekad mene dok kroz korzo šetaš 
-Pamtiš li da si tamo sa mnom bila
-Sjećaš li se mojih pogleda
-Sreće dok te gledam i tuge pred odlazak
-Tišina je bila znak da se bliži polazak
+                Ja i moj kolega volimo jesti
+jedva čekamo kad ćemo za stol sjesti
+Svaka prigoda prilika je prava da glava ostane nam zdrava.
 
-Vjerovao sam vjerovao tebi više nego svojim očima
-Zbog tebe zbog tebe sve sam suze isplakao 
-Cijelog sebe sam ti dao i sad sam slomljen ostao
-Pitam se pitam zar je moguće da si me zaboravila
-Da li bar prosinac te sjeti na mene 
-To nam je bilo najljepše vrijeme
+Kupujemo auto prodajemo auto premještaji razni, PA ŠTA
+Ma prilika kad nema svejedno se slavi
+nek se stol priprema
+u našim srcima nikad, nikad mira nema
 
-Sjećaš li se mojih pogleda
-Sreće dok te gledam i tuge pred odlazak
-Tišina je bila znak da se bliži polazak
+Tambure sviraju, rakija se toči
+na svakoj zabavi sjaje nam oči.
+Nek konobar nosi ne pitamo kolko košta 
+večeras se slavi i nije nam dosta 
 
-Vjerovao sam vjerovao tebi više nego svojim očima
-Zbog tebe zbog tebe sve sam suze isplakao 
-Cijelog sebe sam ti dao i sad sam slomljen ostao
+Kupujemo auto, prodajemo auto, premještaji razni, PA ŠTA
+Ma prilika kad nema svejedno se slavi
+nek se stol priprema
+u našim srcima nikad nikad mira nema
 
-Dal te bar prosinac sjeti na mene
-To nam je bilo najljepše vrijeme
+Tambure sviraju, rakija se toči na svakoj zabavi sjaje nam oči.
+Nek konobar nosi ne pitamo kolko košta
+večeras se slavi i nije nam dosta
+
+U našim srcima nikad mira nema
+Nikad mira nema
             </p>
         </div>
     </div>
@@ -232,6 +234,15 @@ To nam je bilo najljepše vrijeme
     </div>
     
     <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/wZYE009wIOo" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Korzo i tišina</span>
+        <!-- Ovdje je ključna promjena: data-target="korzo i tišina" -->
+        <button onclick="otvoriTekst(this)" data-target="modal-korzo-i-tišina" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
 
         <div class="glass p-2 rounded-xl neon-border">
     <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/9h9Rlpbl2Y0" frameborder="0" allowfullscreen></iframe>
@@ -555,6 +566,40 @@ To nam je bilo najljepše vrijeme
         <button onclick="slijedecaStranica()" id="btn-str-next" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">→</button>
     </div>
 </section>
+
+    <!-- ID mora biti isti kao data-target u tvom dugmetu -->
+<div id="modal-korzo-i-tišina" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
+        <!-- Ovdje koristimo zatvoriTekst(this) umjesto 'pjesma-1' -->
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Korzo i tišina</h3>
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+            Sjetiš li se sjetiš li se nekad mene dok kroz korzo šetaš 
+Pamtiš li da si tamo sa mnom bila
+Sjećaš li se mojih pogleda
+Sreće dok te gledam i tuge pred odlazak
+Tišina je bila znak da se bliži polazak
+
+Vjerovao sam vjerovao tebi više nego svojim očima
+Zbog tebe zbog tebe sve sam suze isplakao 
+Cijelog sebe sam ti dao i sad sam slomljen ostao
+Pitam se pitam zar je moguće da si me zaboravila
+Da li bar prosinac te sjeti na mene 
+To nam je bilo najljepše vrijeme
+
+Sjećaš li se mojih pogleda
+Sreće dok te gledam i tuge pred odlazak
+Tišina je bila znak da se bliži polazak
+
+Vjerovao sam vjerovao tebi više nego svojim očima
+Zbog tebe zbog tebe sve sam suze isplakao 
+Cijelog sebe sam ti dao i sad sam slomljen ostao
+
+Dal te bar prosinac sjeti na mene
+To nam je bilo najljepše vrijeme
+            </p>
+        </div>
+    </div>
 
     <!-- ID mora biti isti kao data-target u tvom dugmetu -->
 <div id="modal-zelena-tuga" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
