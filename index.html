@@ -663,10 +663,10 @@ Ljube moj
     </div>
 
     <div id="paginacija-kontejner" class="flex justify-center gap-4 mt-16 text-sm">
-        <button onclick="promijeniStranicu(1)" id="btn-str-1" class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-600 font-bold text-white">1</button>
-        <button onclick="promijeniStranicu(2)" id="btn-str-2" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">2</button>
-        <button onclick="slijedecaStranica()" id="btn-str-next" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">→</button>
-    </div>
+    <button onclick="promijeniStranicu(1)" id="btn-str-1" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">1</button>
+    <button onclick="promijeniStranicu(2)" id="btn-str-2" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">2</button>
+    <button onclick="promijeniStranicu(3)" id="btn-str-3" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">3</button>
+</div>
 </section>
 
     <!-- ID mora biti isti kao data-target u tvom dugmetu -->
@@ -2555,52 +2555,38 @@ dok mi život bez tvog svitla prolazi
         const videoZapisi = grid.getElementsByClassName('glass');
         const ukupnoVideoZapisa = videoZapisi.length;
 
-        // Izračunaj raspon za trenutnu stranicu
         const pocetak = (trenutnaStranica - 1) * poStranici;
         const kraj = pocetak + poStranici;
 
-        // Prođi kroz sve videe i prikaži samo onih 20 koji pripadaju trenutnoj stranici
+        // Prikazi samo videe za trenutnu stranicu
         for (let i = 0; i < ukupnoVideoZapisa; i++) {
-            if (i >= pocetak && i < kraj) {
-                videoZapisi[i].style.display = "block";
-            } else {
-                videoZapisi[i].style.display = "none";
-            }
+            videoZapisi[i].style.display = (i >= pocetak && i < kraj) ? "block" : "none";
         }
 
-        // Osvježi izgled gumbova (plava boja na aktivnom)
-        const btn1 = document.getElementById('btn-str-1');
-        const btn2 = document.getElementById('btn-str-2');
-
-        if (trenutnaStranica === 1) {
-            btn1.className = "w-10 h-10 flex items-center justify-center rounded-lg bg-blue-600 font-bold text-white";
-            btn2.className = "w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white";
-        } else {
-            btn1.className = "w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white";
-            btn2.className = "w-10 h-10 flex items-center justify-center rounded-lg bg-blue-600 font-bold text-white";
+        // Automatsko osvježavanje izgleda svih dugmadi (radi za 1, 2, 3...)
+        for (let i = 1; i <= 3; i++) {
+            const btn = document.getElementById('btn-str-' + i);
+            if (btn) {
+                if (trenutnaStranica === i) {
+                    btn.className = "w-10 h-10 flex items-center justify-center rounded-lg bg-blue-600 font-bold text-white";
+                } else {
+                    btn.className = "w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white";
+                }
+            }
         }
     }
 
     function promijeniStranicu(brojStranice) {
         trenutnaStranica = brojStranice;
         prikaziVideazapis();
-        // Automatski skrola ekran na početak sekcije s videima da korisnik ne mora sam skrolati gore
+        // Skrolaj na početak grida
         document.getElementById('video-grid').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function slijedecaStranica() {
-        if (trenutnaStranica < 2) {
-            promijeniStranicu(trenutnaStranica + 1);
-        } else {
-            promijeniStranicu(1); // ako je na zadnjoj, vraća na prvu
-        }
     }
 
     // Pokreni sustav odmah pri učitavanju stranice
     document.addEventListener("DOMContentLoaded", function() {
         prikaziVideazapis();
     });
-
     // ==========================================
     // 2. DIO: LOGIKA ZA TEKSTOVE PJESAMA (MODAL)
     // ==========================================
