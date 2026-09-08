@@ -247,6 +247,16 @@ Dođi mi opet.... na tren me ukradi...
          <div class="glass p-2 rounded-xl neon-border">
     <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/J-mGH7xyHiE" frameborder="0" allowfullscreen></iframe>
     <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Drugačiji način</span>
+        <!-- Ovdje je ključna promjena: data-target="kruzni tok" -->
+        <button onclick="otvoriTekst(this)" data-target="drugaciji-nacin" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
+
+
+         <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/J-mGH7xyHiE" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
         <span class="text-sm font-semibold text-gray-300">Bez jedine sreće</span>
         <!-- Ovdje je ključna promjena: data-target="kruzni tok" -->
         <button onclick="otvoriTekst(this)" data-target="bez-jedine-srece" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
@@ -729,7 +739,44 @@ Dođi mi opet.... na tren me ukradi...
     <button onclick="promijeniStranicu(3)" id="btn-str-3" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">3</button>
 </div>
 </section>
+    
+<!-- ID mora biti isti kao data-target u tvom dugmetu -->
+<div id="drugaciji-nacin" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
+        <!-- Ovdje koristimo zatvoriTekst(this) umjesto 'pjesma-1' -->
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Drugačiji način</h3>
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+           Obećanje pred Bogom sam dala
+a dobro sam znala od tebe nikog više voljet neću
+Dok žmirim i dok gledam vidim samo tvoje oči plave
+samo jedan susret dovoljan je bio da osjetimo ono što smo znali
 
+Dobro znaš... držiš me živom
+osjetim da sam voljena i da me želiš
+Volimo se kao prvog dana
+samo ovaj put na drugačiji način... porukama i slikama
+
+Još se sjećam mirisa tvoje kože i tvoj parfem pamtim,
+još tijelo osjeti tvoje poljupce i dodire od kojih tijelo trne
+
+Jedan prsten na ruci, a cijeli život u tvojim plavim očima...
+Lažni svijet nas dijeli, al u duši smo jedno drugom sudbina.
+
+Dobro znaš... držiš me živom
+osjetim da sam voljena i da me želiš
+Volimo se kao prvog dana,
+samo ovaj put na drugačiji način... porukama i slikama
+
+Samo ovaj put... porukama i slikama...
+Dobro znaš da me držiš živom...
+
+Volimo se kao prvog dana
+Na drugačiji način...
+            </p>
+        </div>
+    </div>
+    
 
      <!-- ID mora biti isti kao data-target u tvom dugmetu -->
 <div id="bez-jedine-srece" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
