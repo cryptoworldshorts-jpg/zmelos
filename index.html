@@ -262,6 +262,15 @@ neću moći..
     
     <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+         <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/V_UE-k3RFz4" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Nedostaješ</span>
+        <!-- Ovdje je ključna promjena: data-target="kruzni tok" -->
+        <button onclick="otvoriTekst(this)" data-target="nedostajes" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
+
         <div class="glass p-2 rounded-xl neon-border">
     <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/CcovnLV3qMQ" frameborder="0" allowfullscreen></iframe>
     <div class="mt-3 flex justify-between items-center px-2 pb-1">
@@ -840,6 +849,42 @@ neću moći..
     <button onclick="promijeniStranicu(3)" id="btn-str-3" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">3</button>
 </div>
 </section>
+
+    <!-- ID mora biti isti kao data-target u tvom dugmetu -->
+<div id="nedostajes" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
+        <!-- Ovdje koristimo zatvoriTekst(this) umjesto 'pjesma-1' -->
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Nedostaješ</h3>
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+           Gdje god pođem samo tvoje lice vidim
+ulicama prolazim... isključen sam totalno...
+samo svoje srce čujem
+a u srcu samo ti
+
+U kafanu skrenem, konobar mi piće toči
+ne pitaju ništa i oni znaju sve
+Moje nebo si bila i sad te više nema
+nedostaješ... nedostaješ...
+
+
+Odakle početi... ni sam više ne znam kako,
+il se čovjek samo na tugu navikne...
+pa mu i bol postane dom.
+
+U kafanu skrenem, konobar mi piće toči.
+ne pitaju ništa i oni znaju sve
+Moje nebo si bila i sad te više nema
+nedostaješ... nedostaješ...
+
+
+Nedostaješ...
+nedostaješ...
+
+
+            </p>
+        </div>
+    </div>
 
     <!-- ID mora biti isti kao data-target u tvom dugmetu -->
 <div id="slavonijo-moja-zlatna-ravnico" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
