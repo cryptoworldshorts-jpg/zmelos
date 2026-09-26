@@ -262,6 +262,15 @@ neću moći..
     
     <div id="video-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
+         <div class="glass p-2 rounded-xl neon-border">
+    <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/nNXjxYkZK7A" frameborder="0" allowfullscreen></iframe>
+    <div class="mt-3 flex justify-between items-center px-2 pb-1">
+        <span class="text-sm font-semibold text-gray-300">Hvala ti, ljube</span>
+        <!-- Ovdje je ključna promjena: data-target="kruzni tok" -->
+        <button onclick="otvoriTekst(this)" data-target="hvala-ti-ljube" class="text-xs px-3 py-1.5 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-400 hover:bg-blue-500 hover:text-white transition shadow-lg hover:shadow-blue-500/20">Tekst Pjesme</button>
+    </div>
+</div>
+
         <div class="glass p-2 rounded-xl neon-border">
     <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/5WwnY3KlTx4" frameborder="0" allowfullscreen></iframe>
     <div class="mt-3 flex justify-between items-center px-2 pb-1">
@@ -867,6 +876,61 @@ neću moći..
     <button onclick="promijeniStranicu(3)" id="btn-str-3" class="w-10 h-10 flex items-center justify-center rounded-lg glass hover:neon-border transition text-white">3</button>
 </div>
 </section>
+
+     <!-- ID mora biti isti kao data-target u tvom dugmetu -->
+<div id="hvala-ti-ljube" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
+    <div class="glass max-w-md w-full rounded-2xl neon-border p-6 relative max-h-[80vh] overflow-y-auto">
+        <!-- Ovdje koristimo zatvoriTekst(this) umjesto 'pjesma-1' -->
+        <button onclick="zatvoriTekst(this)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
+        <h3 class="text-2xl font-pisana neon-text text-blue-400 mb-4">Hvala ti, ljube</h3>
+        <p class="text-gray-300 whitespace-pre-line leading-relaxed text-sm font-sans">
+           Uz tebe, uz tebe sritan sam, draga,
+prolaze nam godine ka brodovi kroz luku.
+A meni je važno
+da držim tvoju ruku.
+
+Prošli smo bure,
+a i bonaca je bilo.
+Uz tebe sam sritan
+i ne bi ništa minjo
+
+Hvala ti, ljube,
+za sve što si bila.
+Hvala, zlato moje milo
+I da opet idem ispočetka
+sve bi s tobom
+kao prvog dana
+
+Zajedno u more gledamo.
+Siićamo se dana lipih
+i volimo se više
+nego jučer
+
+Hvala ti, ljube,
+Zlato moje milo,
+bez tebe ništa isto ne bi bilo
+
+Sunce si moje
+i cili moj svit
+
+
+Hvala ti, ljube,
+za sve što si bila.
+Hvala, zlato moje milo
+I da opet idem ispočetka
+sve bi s tobom
+kao prvog dana
+
+
+Hvala ti...
+Hvala za sve.
+
+Moja ljube,
+cili si moj svit.
+            </p>
+        </div>
+    </div>
+
 
     <!-- ID mora biti isti kao data-target u tvom dugmetu -->
 <div id="lipo-ce-nam-biti" class="fixed inset-0 bg-black/80 backdrop-blur-md z-[10000] hidden items-center justify-center p-4 transition-all duration-300">
